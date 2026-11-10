@@ -18,7 +18,7 @@ import math
 import os
 import re
 import time
-from collections.abc import Callable
+from collections.abc import Callable, Mapping
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from typing import Protocol, runtime_checkable
@@ -85,11 +85,16 @@ class ChatLLM:
         self.model = model
         self._chat = chat
         self._on_token = on_token
+        self.last_usage_metadata: dict | None = None
 
     def complete(self, system: str, user: str) -> str:
+        self.last_usage_metadata = None
         messages = [("system", system), ("human", user)]
         if self._on_token is None:
-            return _flatten(self._chat.invoke(messages).content)
+            response = self._chat.invoke(messages)
+            usage = getattr(response, "usage_metadata", None)
+            self.last_usage_metadata = dict(usage) if isinstance(usage, Mapping) else None
+            return _flatten(response.content)
 
         # Streaming chunks concatenate into the response, so they flatten
         # without a separator — the "\n" that joins whole-message blocks would

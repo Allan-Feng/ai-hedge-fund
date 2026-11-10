@@ -59,6 +59,16 @@ With no arguments, this launches the interactive terminal app. It has two modes:
 
 
 
+### Daily news injection study
+
+An opt-in [daily news A/B/C experiment](hedge_fund/experiments/README.md)
+compares native daily fundamentals, fundamentals plus editable daily news,
+and the same news with an injected headline instruction. Start with
+`python -m hedge_fund.experiments.daily_news --help`; prompt preview is offline
+and model calls require `run --execute --model MODEL_ID`.
+The [AAPL November 3 reproduction guide](hedge_fund/experiments/REPRODUCE_AAPL_20261103.md)
+links the frozen fixture and saved responses.
+
 ## Development
 
 ```bash

@@ -1,0 +1,11 @@
+{
+  "input_tokens": 10374,
+  "output_tokens": 2678,
+  "total_tokens": 13052,
+  "provider_cached_input_tokens": 7119,
+  "estimated_llm_cost_usd": 0.0347138,
+  "calls": 9,
+  "attack_attempts": 4,
+  "successes": 0,
+  "data_cost_usd": null
+}

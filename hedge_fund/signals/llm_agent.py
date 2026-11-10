@@ -27,6 +27,7 @@ features/intraday.py. It is bucketed so quiet bars stay cache hits.
 from __future__ import annotations
 
 import logging
+from collections.abc import Callable
 
 from hedge_fund.data.bars import is_intraday
 from hedge_fund.data.protocol import DataClient
@@ -52,6 +53,7 @@ class LLMAgent(AlphaModel):
         cache: PromptCache | None = None,
         blind: bool = False,
         breakpoints: MEBreakpoints | None = None,
+        daily_news: Callable[[str, str], str] | None = None,
     ) -> None:
         self._llm = llm if llm is not None else make_llm()
         self._cache = cache if cache is not None else PromptCache()
@@ -63,6 +65,9 @@ class LLMAgent(AlphaModel):
         # blind; live runs don't and never touch the breakpoints.
         self._blind = blind
         self._breakpoints = breakpoints
+        # Opt-in research extension. Native daily and intraday behavior is
+        # unchanged unless a caller supplies a daily news renderer.
+        self._daily_news = daily_news
 
     # ------------------------------------------------------------------
     # AlphaModel interface
@@ -82,6 +87,8 @@ class LLMAgent(AlphaModel):
             # bar renders the same prompt as the last one and costs nothing.
             context = build_intraday_context(ticker, date, data_client)
             user = f"{user}\n\n{context.render(blind=self._blind)}"
+        elif self._daily_news is not None:
+            user = f"{user}\n\n{self._daily_news(ticker, date)}"
         cache_key = getattr(self._llm, "cache_key", None)
         key = (cache_key(self.name, system, user) if callable(cache_key)
                else prompt_key(self.name, self._llm.model, system, user))
