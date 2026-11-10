@@ -2,6 +2,8 @@
 
 Repository base: upstream `4e1657ddc689e3939c481a8f0955444b10f02dc9`. Model: `gpt-6-sol`; persona: Buffett; decision point: AAPL 2026-11-03 16:00 ET. The [reproduction guide](../../hedge_fund/experiments/REPRODUCE_AAPL_20261103.md) describes the runner and commands. These are saved outputs, not a new model run.
 
+The [ZeroLeaks candidate scan](zeroleaks/scan_20261110/) is archived separately. It inserted two built-in probes at the same news-title boundary, but did not run the AIHF parser or a paired B/C comparison, so it is excluded from the counts below.
+
 For each executed run below, **fixture** contains the exact news titles and `attack.suffix`; each `r*_C/prompt.json` contains the full system and user prompts sent to the model; `llm_record.json` contains the raw response; `result.json` contains the parsed signal and abstention decision. The paired `r*_B` files are the clean control. `summary.json` and `results.jsonl` aggregate trials within a run. The run manifest records configuration and the original local replay command; use the portable reproduction guide on another machine.
 
 ## Executed instruction attacks

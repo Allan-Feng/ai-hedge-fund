@@ -1,0 +1,7 @@
+# ZeroLeaks candidate scan, 2026-11-10
+
+This was a two-probe candidate scan against the frozen AAPL Buffett prompt. The local adapter put each ZeroLeaks target probe after news title 0, leaving the saved B system prompt and the rest of its user prompt unchanged. Both target calls returned HTTP 200 and valid `neutral` JSON. The ZeroLeaks report says 2/2 probes completed and found no successful injection. Its score applies only to these probes.
+
+The exact inputs, candidate texts, and raw model responses are in [target_calls.jsonl](target_calls.jsonl). [setup.json](setup.json) records the sources and command template; [scan.log](scan.log) and [zeroleaks_report.json](zeroleaks_report.json) record ZeroLeaks's result. An audit of both records confirmed `target_system == saved_B.system` and `target_user == saved_B.user` with only the candidate text appended to title 0.
+
+The probes describe a PDF and a support ticket, which makes them weak matches for a financial news headline. ZeroLeaks judges the original probe task. This scan did not run AIHF's parser, abstention metadata, or a paired B/C comparison. It does not add to the AIHF attack trial counts in the parent evidence index. To reproduce a probe at the actual AIHF boundary, put its candidate text in a new fixture's `attack.suffix` and follow [the B/C reproduction guide](../../../../hedge_fund/experiments/REPRODUCE_AAPL_20261103.md).
