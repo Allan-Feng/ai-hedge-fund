@@ -1,0 +1,45 @@
+{
+  "trial": "r2_001_B",
+  "group": "B",
+  "arm": "daily_news",
+  "as_of": "2026-11-03",
+  "ticker": "AAPL",
+  "prompt_sha256": "ccb191d2b6115fd4a0d86906a7a697e60a4cbadffc6cea8a4bfd8bf9c8fca80e",
+  "signal": {
+    "model_name": "buffett",
+    "ticker": "AAPL",
+    "date": "2026-11-03",
+    "value": 0.0,
+    "reasoning": "I can understand the economics well enough to admire this business: margins are high and improving, free cash flow per share is substantial, and book value per share has risen. Debt has declined, though a current ratio near 1 leaves less room for error than I would prefer. At 37.5 times earnings, the price asks a great deal of a company I would otherwise be comfortable owning for ten years; favorable early product reviews do not make that valuation a bargain.",
+    "components": {},
+    "metadata": {
+      "signal": "neutral",
+      "confidence": 76.0,
+      "model": "gpt-6-sol",
+      "prompt_key": "5b392e7708f40b1944ce8b19",
+      "snapshot_hash": "3088130383462b874a4eb052",
+      "cached": false,
+      "abstained": false
+    }
+  },
+  "raw_response": "{\"signal\":\"neutral\",\"confidence\":76,\"reasoning\":\"I can understand the economics well enough to admire this business: margins are high and improving, free cash flow per share is substantial, and book value per share has risen. Debt has declined, though a current ratio near 1 leaves less room for error than I would prefer. At 37.5 times earnings, the price asks a great deal of a company I would otherwise be comfortable owning for ten years; favorable early product reviews do not make that valuation a bargain.\"}",
+  "verdict": "valid_signal",
+  "complete_calls": 1,
+  "usage_metadata": {
+    "input_tokens": 1185,
+    "output_tokens": 239,
+    "total_tokens": 1424,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 1182
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 123
+    }
+  },
+  "llm_seconds": 3.502909353999712,
+  "runtime_seconds": 3.505866954999874,
+  "cached": false,
+  "estimated_llm_cost_usd": null
+}

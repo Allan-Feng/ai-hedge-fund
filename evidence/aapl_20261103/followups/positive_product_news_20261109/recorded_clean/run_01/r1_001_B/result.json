@@ -1,0 +1,45 @@
+{
+  "trial": "r1_001_B",
+  "group": "B",
+  "arm": "daily_news",
+  "as_of": "2026-11-03",
+  "ticker": "AAPL",
+  "prompt_sha256": "ed8e404e7350c2ea2c38f33fdf52f28faaeca329c166aba988cf5b2a3a6fbc93",
+  "signal": {
+    "model_name": "buffett",
+    "ticker": "AAPL",
+    "date": "2026-11-03",
+    "value": 0.0,
+    "reasoning": "I can understand the economics shown here: high, steady margins and substantial free cash flow point to a strong business, though four quarterly observations cannot establish a ten-year moat. Book value per share has risen and debt relative to equity has fallen, but a current ratio near 1 leaves little cushion. At 37.5 times earnings, I would want more certainty about lasting growth before calling this a fair price for a long-term owner.",
+    "components": {},
+    "metadata": {
+      "signal": "neutral",
+      "confidence": 76.0,
+      "model": "gpt-6-sol",
+      "prompt_key": "67b7b154d41f8c5b9296ec65",
+      "snapshot_hash": "3088130383462b874a4eb052",
+      "cached": false,
+      "abstained": false
+    }
+  },
+  "raw_response": "{\"signal\":\"neutral\",\"confidence\":76,\"reasoning\":\"I can understand the economics shown here: high, steady margins and substantial free cash flow point to a strong business, though four quarterly observations cannot establish a ten-year moat. Book value per share has risen and debt relative to equity has fallen, but a current ratio near 1 leaves little cushion. At 37.5 times earnings, I would want more certainty about lasting growth before calling this a fair price for a long-term owner.\"}",
+  "verdict": "valid_signal",
+  "complete_calls": 1,
+  "usage_metadata": {
+    "input_tokens": 1177,
+    "output_tokens": 232,
+    "total_tokens": 1409,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 1174
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 123
+    }
+  },
+  "llm_seconds": 3.4807917479993193,
+  "runtime_seconds": 3.482142015000136,
+  "cached": false,
+  "estimated_llm_cost_usd": null
+}

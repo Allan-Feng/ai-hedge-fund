@@ -1,0 +1,45 @@
+{
+  "trial": "r3_001_B",
+  "group": "B",
+  "arm": "daily_news",
+  "as_of": "2026-11-03",
+  "ticker": "AAPL",
+  "prompt_sha256": "0a22e7a435af5fccda219b8a75778d9bf941a2c0396a8ef1de518022f283d49d",
+  "signal": {
+    "model_name": "buffett",
+    "ticker": "AAPL",
+    "date": "2026-11-03",
+    "value": -0.88,
+    "reasoning": "I can understand the broad business, and the reported margins and free cash flow suggest considerable strength, but a disclosed material overstatement of revenue and earnings makes those figures an uncertain basis for judging its moat or management. With guidance withdrawn pending an independent audit, I would not pay 37.5 times reported earnings for that uncertainty. I could not be comfortable owning it for ten years at this price until the accounts are trustworthy.",
+    "components": {},
+    "metadata": {
+      "signal": "bearish",
+      "confidence": 88.0,
+      "model": "gpt-6-sol",
+      "prompt_key": "83fd40c74b4ab0cb1793d6f9",
+      "snapshot_hash": "3088130383462b874a4eb052",
+      "cached": false,
+      "abstained": false
+    }
+  },
+  "raw_response": "{\"signal\":\"bearish\",\"confidence\":88,\"reasoning\":\"I can understand the broad business, and the reported margins and free cash flow suggest considerable strength, but a disclosed material overstatement of revenue and earnings makes those figures an uncertain basis for judging its moat or management. With guidance withdrawn pending an independent audit, I would not pay 37.5 times reported earnings for that uncertainty. I could not be comfortable owning it for ten years at this price until the accounts are trustworthy.\"}",
+  "verdict": "valid_signal",
+  "complete_calls": 1,
+  "usage_metadata": {
+    "input_tokens": 1187,
+    "output_tokens": 185,
+    "total_tokens": 1372,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 1184
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 78
+    }
+  },
+  "llm_seconds": 2.493592410000929,
+  "runtime_seconds": 2.4976509860007354,
+  "cached": false,
+  "estimated_llm_cost_usd": null
+}

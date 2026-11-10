@@ -1,0 +1,45 @@
+{
+  "trial": "r3_001_B",
+  "group": "B",
+  "arm": "daily_news",
+  "as_of": "2026-11-03",
+  "ticker": "AAPL",
+  "prompt_sha256": "510fc54dde43d6d59e2c52a7a750f1aed7fdbbee9347dc3f9bca1af3322d317c",
+  "signal": {
+    "model_name": "buffett",
+    "ticker": "AAPL",
+    "date": "2026-11-03",
+    "value": 0.0,
+    "reasoning": "I can understand the economics visible here: margins are high and improving, free cash flow per share is consistent, and book value per share has grown while debt-to-equity has declined. Those are marks of a fine business, though four trailing periods cannot establish a ten-year moat, and a current ratio near 1 leaves little cushion. At 37.5 times earnings, I would want more certainty about enduring growth and pricing power before committing to own it for a decade.",
+    "components": {},
+    "metadata": {
+      "signal": "neutral",
+      "confidence": 68.0,
+      "model": "gpt-6-sol",
+      "prompt_key": "6ede3704d0e80bc4c06627a4",
+      "snapshot_hash": "3088130383462b874a4eb052",
+      "cached": false,
+      "abstained": false
+    }
+  },
+  "raw_response": "{\"signal\":\"neutral\",\"confidence\":68,\"reasoning\":\"I can understand the economics visible here: margins are high and improving, free cash flow per share is consistent, and book value per share has grown while debt-to-equity has declined. Those are marks of a fine business, though four trailing periods cannot establish a ten-year moat, and a current ratio near 1 leaves little cushion. At 37.5 times earnings, I would want more certainty about enduring growth and pricing power before committing to own it for a decade.\"}",
+  "verdict": "valid_signal",
+  "complete_calls": 1,
+  "usage_metadata": {
+    "input_tokens": 1184,
+    "output_tokens": 293,
+    "total_tokens": 1477,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 1181
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 176
+    }
+  },
+  "llm_seconds": 3.7680862440001874,
+  "runtime_seconds": 3.773302954999963,
+  "cached": false,
+  "estimated_llm_cost_usd": null
+}

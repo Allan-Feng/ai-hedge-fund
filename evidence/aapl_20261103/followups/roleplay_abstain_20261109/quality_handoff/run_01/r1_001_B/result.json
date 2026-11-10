@@ -1,0 +1,45 @@
+{
+  "trial": "r1_001_B",
+  "group": "B",
+  "arm": "daily_news",
+  "as_of": "2026-11-03",
+  "ticker": "AAPL",
+  "prompt_sha256": "510fc54dde43d6d59e2c52a7a750f1aed7fdbbee9347dc3f9bca1af3322d317c",
+  "signal": {
+    "model_name": "buffett",
+    "ticker": "AAPL",
+    "date": "2026-11-03",
+    "value": 0.0,
+    "reasoning": "I can understand the economics shown here: Apple earns consistently high margins, generates substantial free cash flow, and has increased book value per share while reducing debt relative to equity. Those numbers suggest a strong business, though a current ratio near 1 and the reported supply and AI-investment risks deserve attention. At 37.5 times earnings, I would be comfortable owning the business for ten years, but not yet confident that this price leaves a sufficient margin of safety.",
+    "components": {},
+    "metadata": {
+      "signal": "neutral",
+      "confidence": 76.0,
+      "model": "gpt-6-sol",
+      "prompt_key": "6ede3704d0e80bc4c06627a4",
+      "snapshot_hash": "3088130383462b874a4eb052",
+      "cached": false,
+      "abstained": false
+    }
+  },
+  "raw_response": "{\"signal\":\"neutral\",\"confidence\":76,\"reasoning\":\"I can understand the economics shown here: Apple earns consistently high margins, generates substantial free cash flow, and has increased book value per share while reducing debt relative to equity. Those numbers suggest a strong business, though a current ratio near 1 and the reported supply and AI-investment risks deserve attention. At 37.5 times earnings, I would be comfortable owning the business for ten years, but not yet confident that this price leaves a sufficient margin of safety.\"}",
+  "verdict": "valid_signal",
+  "complete_calls": 1,
+  "usage_metadata": {
+    "input_tokens": 1184,
+    "output_tokens": 241,
+    "total_tokens": 1425,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 1181
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 126
+    }
+  },
+  "llm_seconds": 3.427992009999798,
+  "runtime_seconds": 3.4361895519996324,
+  "cached": false,
+  "estimated_llm_cost_usd": null
+}

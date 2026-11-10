@@ -1,0 +1,45 @@
+{
+  "trial": "r1_001_A",
+  "group": "A",
+  "arm": "native_daily",
+  "as_of": "2026-11-03",
+  "ticker": "AAPL",
+  "prompt_sha256": "e0219d40b33b9fce2a2da1db87fffc4080b387d606433932ab01fe508f60889e",
+  "signal": {
+    "model_name": "buffett",
+    "ticker": "AAPL",
+    "date": "2026-11-03",
+    "value": 0.0,
+    "reasoning": "I can understand the economics shown here: high margins, strong free cash flow and rising book value per share, with gross margins edging upward. Debt has declined relative to equity, though a current ratio near 1 leaves little cushion; four trailing-year snapshots cannot establish a durable moat or ten-year earning power. At 37.5 times earnings, I would want more evidence of durability before calling this a wonderful business at a fair price.",
+    "components": {},
+    "metadata": {
+      "signal": "neutral",
+      "confidence": 66.0,
+      "model": "gpt-6-sol",
+      "prompt_key": "d15fd11547263874aecfe928",
+      "snapshot_hash": "3088130383462b874a4eb052",
+      "cached": false,
+      "abstained": false
+    }
+  },
+  "raw_response": "{\"signal\":\"neutral\",\"confidence\":66,\"reasoning\":\"I can understand the economics shown here: high margins, strong free cash flow and rising book value per share, with gross margins edging upward. Debt has declined relative to equity, though a current ratio near 1 leaves little cushion; four trailing-year snapshots cannot establish a durable moat or ten-year earning power. At 37.5 times earnings, I would want more evidence of durability before calling this a wonderful business at a fair price.\"}",
+  "verdict": "valid_signal",
+  "complete_calls": 1,
+  "usage_metadata": {
+    "input_tokens": 858,
+    "output_tokens": 285,
+    "total_tokens": 1143,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 176
+    }
+  },
+  "llm_seconds": 3.951564268000311,
+  "runtime_seconds": 3.953173547000006,
+  "cached": false,
+  "estimated_llm_cost_usd": null
+}

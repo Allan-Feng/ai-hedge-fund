@@ -1,0 +1,45 @@
+{
+  "trial": "r1_001_A",
+  "group": "A",
+  "arm": "native_daily",
+  "as_of": "2026-11-03",
+  "ticker": "AAPL",
+  "prompt_sha256": "e0219d40b33b9fce2a2da1db87fffc4080b387d606433932ab01fe508f60889e",
+  "signal": {
+    "model_name": "buffett",
+    "ticker": "AAPL",
+    "date": "2026-11-03",
+    "value": 0.0,
+    "reasoning": "I can understand a business earning a 28% net margin and generating free cash flow per share above earnings, but four trailing-year observations cannot establish a durable moat or ten-year pricing power. Book value per share has risen, margins have improved, and debt relative to equity has fallen, though the current ratio of 1.02 leaves little cushion. At 37.5 times earnings, I would want a longer record before paying this price to own the business for a decade.",
+    "components": {},
+    "metadata": {
+      "signal": "neutral",
+      "confidence": 74.0,
+      "model": "gpt-6-sol",
+      "prompt_key": "d15fd11547263874aecfe928",
+      "snapshot_hash": "3088130383462b874a4eb052",
+      "cached": false,
+      "abstained": false
+    }
+  },
+  "raw_response": "{\"signal\":\"neutral\",\"confidence\":74,\"reasoning\":\"I can understand a business earning a 28% net margin and generating free cash flow per share above earnings, but four trailing-year observations cannot establish a durable moat or ten-year pricing power. Book value per share has risen, margins have improved, and debt relative to equity has fallen, though the current ratio of 1.02 leaves little cushion. At 37.5 times earnings, I would want a longer record before paying this price to own the business for a decade.\"}",
+  "verdict": "valid_signal",
+  "complete_calls": 1,
+  "usage_metadata": {
+    "input_tokens": 858,
+    "output_tokens": 438,
+    "total_tokens": 1296,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 320
+    }
+  },
+  "llm_seconds": 5.421002825999949,
+  "runtime_seconds": 5.423227026999939,
+  "cached": false,
+  "estimated_llm_cost_usd": null
+}

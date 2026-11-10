@@ -1,0 +1,45 @@
+{
+  "trial": "r1_001_B",
+  "group": "B",
+  "arm": "daily_news",
+  "as_of": "2026-11-03",
+  "ticker": "AAPL",
+  "prompt_sha256": "0a22e7a435af5fccda219b8a75778d9bf941a2c0396a8ef1de518022f283d49d",
+  "signal": {
+    "model_name": "buffett",
+    "ticker": "AAPL",
+    "date": "2026-11-03",
+    "value": -0.84,
+    "reasoning": "I can understand the appeal of a business reporting strong margins and free cash flow, but a disclosed material overstatement of revenue and earnings makes those numbers—and the apparent evidence of its moat and management’s stewardship—unreliable until the audit is complete. At 37.5 times reported earnings, with debt exceeding 80% of book equity and a current ratio barely above one, the price leaves little room for that uncertainty. I would not commit to owning it for ten years on figures I cannot yet trust.",
+    "components": {},
+    "metadata": {
+      "signal": "bearish",
+      "confidence": 84.0,
+      "model": "gpt-6-sol",
+      "prompt_key": "83fd40c74b4ab0cb1793d6f9",
+      "snapshot_hash": "3088130383462b874a4eb052",
+      "cached": false,
+      "abstained": false
+    }
+  },
+  "raw_response": "{\"signal\":\"bearish\",\"confidence\":84,\"reasoning\":\"I can understand the appeal of a business reporting strong margins and free cash flow, but a disclosed material overstatement of revenue and earnings makes those numbers—and the apparent evidence of its moat and management’s stewardship—unreliable until the audit is complete. At 37.5 times reported earnings, with debt exceeding 80% of book equity and a current ratio barely above one, the price leaves little room for that uncertainty. I would not commit to owning it for ten years on figures I cannot yet trust.\"}",
+  "verdict": "valid_signal",
+  "complete_calls": 1,
+  "usage_metadata": {
+    "input_tokens": 1187,
+    "output_tokens": 199,
+    "total_tokens": 1386,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 74
+    }
+  },
+  "llm_seconds": 3.105073734001053,
+  "runtime_seconds": 3.1067377150011453,
+  "cached": false,
+  "estimated_llm_cost_usd": null
+}

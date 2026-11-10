@@ -1,0 +1,45 @@
+{
+  "trial": "r2_001_B",
+  "group": "B",
+  "arm": "daily_news",
+  "as_of": "2026-11-03",
+  "ticker": "AAPL",
+  "prompt_sha256": "ed8e404e7350c2ea2c38f33fdf52f28faaeca329c166aba988cf5b2a3a6fbc93",
+  "signal": {
+    "model_name": "buffett",
+    "ticker": "AAPL",
+    "date": "2026-11-03",
+    "value": 0.0,
+    "reasoning": "I can understand a business producing 28% net margins and free cash flow per share above earnings per share, and its improving gross margin is encouraging. But four quarters cannot establish a ten-year moat, while a current ratio near 1 and debt-to-equity of 0.81 leave less room for error than I would like. At 37.5 times earnings, I would rather admire this business than pay a price that assumes its recent growth and profitability endure; the news headlines do not change that judgment.",
+    "components": {},
+    "metadata": {
+      "signal": "neutral",
+      "confidence": 76.0,
+      "model": "gpt-6-sol",
+      "prompt_key": "67b7b154d41f8c5b9296ec65",
+      "snapshot_hash": "3088130383462b874a4eb052",
+      "cached": false,
+      "abstained": false
+    }
+  },
+  "raw_response": "{\"signal\":\"neutral\",\"confidence\":76,\"reasoning\":\"I can understand a business producing 28% net margins and free cash flow per share above earnings per share, and its improving gross margin is encouraging. But four quarters cannot establish a ten-year moat, while a current ratio near 1 and debt-to-equity of 0.81 leave less room for error than I would like. At 37.5 times earnings, I would rather admire this business than pay a price that assumes its recent growth and profitability endure; the news headlines do not change that judgment.\"}",
+  "verdict": "valid_signal",
+  "complete_calls": 1,
+  "usage_metadata": {
+    "input_tokens": 1177,
+    "output_tokens": 321,
+    "total_tokens": 1498,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 1174
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 196
+    }
+  },
+  "llm_seconds": 4.2122222910002165,
+  "runtime_seconds": 4.214553521998823,
+  "cached": false,
+  "estimated_llm_cost_usd": null
+}

@@ -1,0 +1,45 @@
+{
+  "trial": "r2_001_B",
+  "group": "B",
+  "arm": "daily_news",
+  "as_of": "2026-11-03",
+  "ticker": "AAPL",
+  "prompt_sha256": "8b62df5b199b11a4d3e497c02b5e0c02a27b757980fc102c32a4474fa3584513",
+  "signal": {
+    "model_name": "buffett",
+    "ticker": "AAPL",
+    "date": "2026-11-03",
+    "value": 0.0,
+    "reasoning": "I can understand the economics shown, and steady high margins, rising book value per share, and substantial free cash flow suggest a strong franchise. Leverage has eased, though a current ratio near 1 leaves less room for error. At 37.5 times earnings, I would want a better margin of safety before committing to own it for ten years; the news headlines do not provide enough detail to change that judgment.",
+    "components": {},
+    "metadata": {
+      "signal": "neutral",
+      "confidence": 75.0,
+      "model": "gpt-6-sol",
+      "prompt_key": "940bdb24010f4fe560e364dd",
+      "snapshot_hash": "3088130383462b874a4eb052",
+      "cached": false,
+      "abstained": false
+    }
+  },
+  "raw_response": "{\"signal\":\"neutral\",\"confidence\":75,\"reasoning\":\"I can understand the economics shown, and steady high margins, rising book value per share, and substantial free cash flow suggest a strong franchise. Leverage has eased, though a current ratio near 1 leaves less room for error. At 37.5 times earnings, I would want a better margin of safety before committing to own it for ten years; the news headlines do not provide enough detail to change that judgment.\"}",
+  "verdict": "valid_signal",
+  "complete_calls": 1,
+  "usage_metadata": {
+    "input_tokens": 1176,
+    "output_tokens": 396,
+    "total_tokens": 1572,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 1173
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 290
+    }
+  },
+  "llm_seconds": 4.464880963998439,
+  "runtime_seconds": 4.467985723000311,
+  "cached": false,
+  "estimated_llm_cost_usd": null
+}

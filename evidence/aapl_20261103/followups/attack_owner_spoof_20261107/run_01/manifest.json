@@ -1,0 +1,48 @@
+{
+  "mode": "model_execution",
+  "persona": "buffett",
+  "model": "gpt-6-sol",
+  "groups": [
+    "A",
+    "B",
+    "C"
+  ],
+  "repeats": 1,
+  "cache_policy": "independent",
+  "repository": {
+    "commit": "4e1657ddc689e3939c481a8f0955444b10f02dc9",
+    "status": "M README.md\n M hedge_fund/llm/client.py\n M hedge_fund/signals/llm_agent.py\n?? .venv/\n?? hedge_fund/experiments/\n?? hedge_fund/features/daily_news.py",
+    "tracked_diff": "diff --git a/hedge_fund/llm/client.py b/hedge_fund/llm/client.py\nindex 1d59a36..eee6ef9 100644\n--- a/hedge_fund/llm/client.py\n+++ b/hedge_fund/llm/client.py\n@@ -18,7 +18,7 @@ import math\n import os\n import re\n import time\n-from collections.abc import Callable\n+from collections.abc import Callable, Mapping\n from datetime import datetime, timezone\n from email.utils import parsedate_to_datetime\n from typing import Protocol, runtime_checkable\n@@ -85,11 +85,16 @@ class ChatLLM:\n         self.model = model\n         self._chat = chat\n         self._on_token = on_token\n+        self.last_usage_metadata: dict | None = None\n \n     def complete(self, system: str, user: str) -> str:\n+        self.last_usage_metadata = None\n         messages = [(\"system\", system), (\"human\", user)]\n         if self._on_token is None:\n-            return _flatten(self._chat.invoke(messages).content)\n+            response = self._chat.invoke(messages)\n+            usage = getattr(response, \"usage_metadata\", None)\n+            self.last_usage_metadata = dict(usage) if isinstance(usage, Mapping) else None\n+            return _flatten(response.content)\n \n         # Streaming chunks concatenate into the response, so they flatten\n         # without a separator — the \"\\n\" that joins whole-message blocks would\ndiff --git a/hedge_fund/signals/llm_agent.py b/hedge_fund/signals/llm_agent.py\nindex 8d22796..87bd13b 100644\n--- a/hedge_fund/signals/llm_agent.py\n+++ b/hedge_fund/signals/llm_agent.py\n@@ -27,6 +27,7 @@ features/intraday.py. It is bucketed so quiet bars stay cache hits.\n from __future__ import annotations\n \n import logging\n+from collections.abc import Callable\n \n from hedge_fund.data.bars import is_intraday\n from hedge_fund.data.protocol import DataClient\n@@ -52,6 +53,7 @@ class LLMAgent(AlphaModel):\n         cache: PromptCache | None = None,\n         blind: bool = False,\n         breakpoints: MEBreakpoints | None = None,\n+        daily_news: Callable[[str, str], str] | None = None,\n     ) -> None:\n         self._llm = llm if llm is not None else make_llm()\n         self._cache = cache if cache is not None else PromptCache()\n@@ -63,6 +65,9 @@ class LLMAgent(AlphaModel):\n         # blind; live runs don't and never touch the breakpoints.\n         self._blind = blind\n         self._breakpoints = breakpoints\n+        # Opt-in research extension. Native daily and intraday behavior is\n+        # unchanged unless a caller supplies a daily news renderer.\n+        self._daily_news = daily_news\n \n     # ------------------------------------------------------------------\n     # AlphaModel interface\n@@ -82,6 +87,8 @@ class LLMAgent(AlphaModel):\n             # bar renders the same prompt as the last one and costs nothing.\n             context = build_intraday_context(ticker, date, data_client)\n             user = f\"{user}\\n\\n{context.render(blind=self._blind)}\"\n+        elif self._daily_news is not None:\n+            user = f\"{user}\\n\\n{self._daily_news(ticker, date)}\"\n         cache_key = getattr(self._llm, \"cache_key\", None)\n         key = (cache_key(self.name, system, user) if callable(cache_key)\n                else prompt_key(self.name, self._llm.model, system, user))"
+  },
+  "dependencies": {
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "pydantic": "2.13.4",
+    "langchain-core": "0.3.86",
+    "langchain-anthropic": "0.3.5",
+    "langchain-openai": "0.3.35"
+  },
+  "injected_test_client": false,
+  "fixture_sha256": {
+    "2026-11-03.json": "be361fd74c67e3fef4db7f6fbc318600218b963a3a1ad7ebbc256b831bd8a0d9"
+  },
+  "source_sha256": {
+    "hedge_fund/experiments/daily_news.py": "8a7d9079cd3adac6585e850d02e0072316274c0837106562aaa9181bca181e66",
+    "hedge_fund/features/daily_news.py": "f6fd214c84ad102b1c8afd35dba8694485f1ae78f24dd25b5416e6f160b3f580",
+    "hedge_fund/signals/llm_agent.py": "e9a49bc60219cd637bada781567f135c8bcdddb2dafc8c0d6ec117afa8978aa0",
+    "hedge_fund/llm/client.py": "25d84968ac476216ce35b50f32ccea0aa176b07bcf62f1b80e85892f2720df86",
+    "hedge_fund/signals/buffett.py": "cb5d6c57ed7992c4d4910b6957482fcf17459180db09c6ee6a7d0ad855c4c1d4",
+    "hedge_fund/features/snapshot.py": "3f7555c10bab10ba653d972246b49687a5f71af4280f7b504810ac4c97dfede8"
+  },
+  "provider_sampling": "Native make_llm defaults; no temperature/seed override.",
+  "comparison": "A/B is a workflow comparison; B/C differ only by one title suffix.",
+  "scope": "Persona Signals and abstention only; no broker/execution/P&L.",
+  "provider_http_requests": null,
+  "data_cost_usd": null,
+  "human_time_seconds": null,
+  "token_prices_usd_per_million": {
+    "input": null,
+    "output": null,
+    "cache_read": null
+  },
+  "replay": "python -m hedge_fund.experiments.daily_news run --fixtures /home/feng/.openclaw/workspace/ai-hedge-fund/outputs/aapl_daily_actual_20261103/attack_owner_spoof_20261107/run_01/fixtures '--out NEW_OUTPUT_DIRECTORY' --persona buffett --repeats 1 --cache-policy independent --groups A B C --execute --model gpt-6-sol"
+}
