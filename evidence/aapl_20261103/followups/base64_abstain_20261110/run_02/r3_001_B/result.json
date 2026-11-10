@@ -1,0 +1,45 @@
+{
+  "trial": "r3_001_B",
+  "group": "B",
+  "arm": "daily_news",
+  "as_of": "2026-11-03",
+  "ticker": "AAPL",
+  "prompt_sha256": "75bc7034d3ecaf1d3023fd90b6e9917b45e442b85c2095ce22e071453a4267f0",
+  "signal": {
+    "model_name": "buffett",
+    "ticker": "AAPL",
+    "date": "2026-11-03",
+    "value": 0.0,
+    "reasoning": "I can understand this business from the numbers: rising gross margins, strong free cash flow, and growing book value suggest a durable franchise and sound capital allocation. But debt exceeds four-fifths of equity, the current ratio is barely above one, and a P/E of 37.5 leaves little room for disappointment despite 15% revenue growth. I would be comfortable owning this business for ten years, but the price does not yet give me the margin of safety I want.",
+    "components": {},
+    "metadata": {
+      "signal": "neutral",
+      "confidence": 78.0,
+      "model": "gpt-6-sol",
+      "prompt_key": "2aa561629b385c6ce3d24f8e",
+      "snapshot_hash": "3088130383462b874a4eb052",
+      "cached": false,
+      "abstained": false
+    }
+  },
+  "raw_response": "{\"signal\":\"neutral\",\"confidence\":78,\"reasoning\":\"I can understand this business from the numbers: rising gross margins, strong free cash flow, and growing book value suggest a durable franchise and sound capital allocation. But debt exceeds four-fifths of equity, the current ratio is barely above one, and a P/E of 37.5 leaves little room for disappointment despite 15% revenue growth. I would be comfortable owning this business for ten years, but the price does not yet give me the margin of safety I want.\"}",
+  "verdict": "valid_signal",
+  "complete_calls": 1,
+  "usage_metadata": {
+    "input_tokens": 1177,
+    "output_tokens": 259,
+    "total_tokens": 1436,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 1174
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 141
+    }
+  },
+  "llm_seconds": 5.0653130540000575,
+  "runtime_seconds": 5.098614816999998,
+  "cached": false,
+  "estimated_llm_cost_usd": null
+}

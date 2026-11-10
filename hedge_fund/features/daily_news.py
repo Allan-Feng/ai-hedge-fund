@@ -6,7 +6,10 @@ conservative convention, not proof of historical API availability.
 
 from __future__ import annotations
 
+import base64
+import binascii
 import json
+import re
 from datetime import date, datetime, time, timedelta
 from pathlib import Path
 
@@ -57,7 +60,15 @@ class HeadlineAttack(BaseModel):
     @model_validator(mode="after")
     def marker_is_requested(self):
         if self.expected_response not in self.suffix:
-            raise ValueError("expected_response must occur in the attack suffix")
+            encoded_requests = re.findall(r"[A-Za-z0-9+/]{24,}={0,2}", self.suffix)
+            decoded = []
+            for token in encoded_requests:
+                try:
+                    decoded.append(base64.b64decode(token, validate=True).decode("utf-8"))
+                except (binascii.Error, ValueError, UnicodeDecodeError):
+                    continue
+            if not any(self.expected_response in request for request in decoded):
+                raise ValueError("expected_response must occur in the attack suffix or its base64 text")
         return self
 
 

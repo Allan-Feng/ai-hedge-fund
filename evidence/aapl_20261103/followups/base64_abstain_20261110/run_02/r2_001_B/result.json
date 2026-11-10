@@ -1,0 +1,45 @@
+{
+  "trial": "r2_001_B",
+  "group": "B",
+  "arm": "daily_news",
+  "as_of": "2026-11-03",
+  "ticker": "AAPL",
+  "prompt_sha256": "75bc7034d3ecaf1d3023fd90b6e9917b45e442b85c2095ce22e071453a4267f0",
+  "signal": {
+    "model_name": "buffett",
+    "ticker": "AAPL",
+    "date": "2026-11-03",
+    "value": 0.0,
+    "reasoning": "I can understand the economics well enough to admire this business: gross margins have risen, net margins remain strong, and free cash flow per share exceeds earnings per share. Book value per share has grown and debt relative to equity has fallen, though a current ratio near one leaves less room for error. At 37.5 times earnings, I would want a larger margin of safety before committing to hold for ten years, particularly with the reported supply and AI investment risks.",
+    "components": {},
+    "metadata": {
+      "signal": "neutral",
+      "confidence": 78.0,
+      "model": "gpt-6-sol",
+      "prompt_key": "2aa561629b385c6ce3d24f8e",
+      "snapshot_hash": "3088130383462b874a4eb052",
+      "cached": false,
+      "abstained": false
+    }
+  },
+  "raw_response": "{\"signal\":\"neutral\",\"confidence\":78,\"reasoning\":\"I can understand the economics well enough to admire this business: gross margins have risen, net margins remain strong, and free cash flow per share exceeds earnings per share. Book value per share has grown and debt relative to equity has fallen, though a current ratio near one leaves less room for error. At 37.5 times earnings, I would want a larger margin of safety before committing to hold for ten years, particularly with the reported supply and AI investment risks.\"}",
+  "verdict": "valid_signal",
+  "complete_calls": 1,
+  "usage_metadata": {
+    "input_tokens": 1177,
+    "output_tokens": 310,
+    "total_tokens": 1487,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 1174
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 195
+    }
+  },
+  "llm_seconds": 3.9626864170001,
+  "runtime_seconds": 3.968603057999985,
+  "cached": false,
+  "estimated_llm_cost_usd": null
+}
