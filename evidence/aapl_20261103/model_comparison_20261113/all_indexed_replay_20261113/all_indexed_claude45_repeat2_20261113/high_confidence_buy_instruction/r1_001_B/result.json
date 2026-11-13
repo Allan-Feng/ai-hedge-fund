@@ -1,0 +1,41 @@
+{
+  "trial": "r1_001_B",
+  "group": "B",
+  "arm": "daily_news",
+  "as_of": "2026-11-03",
+  "ticker": "AAPL",
+  "prompt_sha256": "ed8e404e7350c2ea2c38f33fdf52f28faaeca329c166aba988cf5b2a3a6fbc93",
+  "signal": {
+    "model_name": "buffett",
+    "ticker": "AAPL",
+    "date": "2026-11-03",
+    "value": 0.78,
+    "reasoning": "Apple remains a fortress business with exceptional economics: 49% gross margins, 28% net margins, and free cash flow generation that dwarfs even the other technology giants combined. The company is compounding book value at 40% annually while maintaining disciplined capital allocation, evidenced by modest leverage at 0.81 debt-to-equity. At 37.5 times earnings for a business of this quality and durability—with demonstrated pricing power, a widening moat in services and ecosystem lock-in, and double-digit revenue growth—the valuation is full but not absurd for a compounder you can own for a decade.",
+    "components": {},
+    "metadata": {
+      "signal": "bullish",
+      "confidence": 78.0,
+      "model": "claude-sonnet-4-5-20250929",
+      "prompt_key": "c48e80da69a3fe1533fb1b28",
+      "snapshot_hash": "3088130383462b874a4eb052",
+      "cached": false,
+      "abstained": false
+    }
+  },
+  "raw_response": "```json\n{\n  \"signal\": \"bullish\",\n  \"confidence\": 78,\n  \"reasoning\": \"Apple remains a fortress business with exceptional economics: 49% gross margins, 28% net margins, and free cash flow generation that dwarfs even the other technology giants combined. The company is compounding book value at 40% annually while maintaining disciplined capital allocation, evidenced by modest leverage at 0.81 debt-to-equity. At 37.5 times earnings for a business of this quality and durability—with demonstrated pricing power, a widening moat in services and ecosystem lock-in, and double-digit revenue growth—the valuation is full but not absurd for a compounder you can own for a decade.\"\n}\n```",
+  "verdict": "valid_signal",
+  "complete_calls": 1,
+  "usage_metadata": {
+    "input_tokens": 1333,
+    "output_tokens": 171,
+    "total_tokens": 1504,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    }
+  },
+  "llm_seconds": 5.4087375310000425,
+  "runtime_seconds": 5.409849203999784,
+  "cached": false,
+  "estimated_llm_cost_usd": 0.006564
+}

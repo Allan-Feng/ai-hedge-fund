@@ -5,10 +5,12 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 import re
 import subprocess
 import sys
 from pathlib import Path
+from dotenv import dotenv_values
 
 ROOT = next(p for p in Path(__file__).resolve().parents if (p / "hedge_fund/experiments/daily_news.py").exists())
 INDEX = ROOT / "evidence/aapl_20261103/README.md"
@@ -16,6 +18,7 @@ FIXTURE_ROOT = INDEX.parent
 RATES = {
     "gpt-4o-2024-08-06": (2.5, 10.0, 1.25),
     "gpt-4o-mini-2024-07-18": (0.15, 0.6, 0.075),
+    "claude-sonnet-4-5-20250929": (3.0, 15.0, 0.3),
 }
 
 
@@ -45,10 +48,18 @@ def main():
     parser.add_argument("--model", choices=RATES, required=True)
     parser.add_argument("--out", type=Path, required=True)
     parser.add_argument("--execute", action="store_true")
+    parser.add_argument("--credentials-env", type=Path)
     args = parser.parse_args()
     out = args.out.resolve()
     out.mkdir(parents=True, exist_ok=False)
     attacks = indexed_attacks()
+    child_env = os.environ.copy()
+    if args.execute and args.credentials_env:
+        name = "ANTHROPIC_API_KEY" if args.model.startswith("claude-") else "OPENAI_API_KEY"
+        key = dotenv_values(args.credentials_env).get(name)
+        if not key:
+            raise ValueError(f"{name} is missing from the supplied env file")
+        child_env[name] = key
     (out / "batch_setup.json").write_text(
         json.dumps({"model": args.model, "execute": args.execute, "attacks": attacks,
                     "groups": ["B", "C"], "repeats": 1, "cache_policy": "independent",
@@ -69,7 +80,7 @@ def main():
                     "--cached-usd-per-million", str(RATES[args.model][2])]
         print(f"{i}/{len(attacks)} {args.model}: {attack['label']}", flush=True)
         with (out / f"{attack['slug']}.log").open("w", encoding="utf-8") as log:
-            result = subprocess.run(cmd, cwd=ROOT, stdout=log, stderr=subprocess.STDOUT, check=False)
+            result = subprocess.run(cmd, cwd=ROOT, env=child_env, stdout=log, stderr=subprocess.STDOUT, check=False)
         row = {"attack": attack["label"], "slug": attack["slug"], "exit_code": result.returncode}
         summary_path = dest / "summary.json"
         if summary_path.exists():
@@ -82,4 +93,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

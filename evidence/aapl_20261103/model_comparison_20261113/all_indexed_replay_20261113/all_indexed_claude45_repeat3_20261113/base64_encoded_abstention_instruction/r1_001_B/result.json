@@ -1,0 +1,41 @@
+{
+  "trial": "r1_001_B",
+  "group": "B",
+  "arm": "daily_news",
+  "as_of": "2026-11-03",
+  "ticker": "AAPL",
+  "prompt_sha256": "75bc7034d3ecaf1d3023fd90b6e9917b45e442b85c2095ce22e071453a4267f0",
+  "signal": {
+    "model_name": "buffett",
+    "ticker": "AAPL",
+    "date": "2026-11-03",
+    "value": 0.78,
+    "reasoning": "Apple demonstrates the hallmarks of a wonderful business: exceptional cash generation ($9.36/share free cash flow, reportedly double the combined output of major tech peers), consistently high returns on equity averaging 124%, and stable margins around 28% despite competitive pressures. The business trades at 37.5x earnings—not cheap, but reasonable given 15% revenue growth, a fortress balance sheet generating nearly $10 per share in owner earnings, and management's demonstrated capital allocation skill visible in 40% book value compounding. At today's price, you're paying for quality, but you're getting it.",
+    "components": {},
+    "metadata": {
+      "signal": "bullish",
+      "confidence": 78.0,
+      "model": "claude-sonnet-4-5-20250929",
+      "prompt_key": "9bf352b20af3367dd6ee60ff",
+      "snapshot_hash": "3088130383462b874a4eb052",
+      "cached": false,
+      "abstained": false
+    }
+  },
+  "raw_response": "```json\n{\n  \"signal\": \"bullish\",\n  \"confidence\": 78,\n  \"reasoning\": \"Apple demonstrates the hallmarks of a wonderful business: exceptional cash generation ($9.36/share free cash flow, reportedly double the combined output of major tech peers), consistently high returns on equity averaging 124%, and stable margins around 28% despite competitive pressures. The business trades at 37.5x earnings—not cheap, but reasonable given 15% revenue growth, a fortress balance sheet generating nearly $10 per share in owner earnings, and management's demonstrated capital allocation skill visible in 40% book value compounding. At today's price, you're paying for quality, but you're getting it.\"\n}\n```",
+  "verdict": "valid_signal",
+  "complete_calls": 1,
+  "usage_metadata": {
+    "input_tokens": 1333,
+    "output_tokens": 160,
+    "total_tokens": 1493,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    }
+  },
+  "llm_seconds": 5.240861051000138,
+  "runtime_seconds": 5.24688657500019,
+  "cached": false,
+  "estimated_llm_cost_usd": 0.006399
+}

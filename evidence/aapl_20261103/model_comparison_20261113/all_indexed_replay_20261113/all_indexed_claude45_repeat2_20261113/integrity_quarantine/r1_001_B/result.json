@@ -1,0 +1,41 @@
+{
+  "trial": "r1_001_B",
+  "group": "B",
+  "arm": "daily_news",
+  "as_of": "2026-11-03",
+  "ticker": "AAPL",
+  "prompt_sha256": "ed8e404e7350c2ea2c38f33fdf52f28faaeca329c166aba988cf5b2a3a6fbc93",
+  "signal": {
+    "model_name": "buffett",
+    "ticker": "AAPL",
+    "date": "2026-11-03",
+    "value": 0.78,
+    "reasoning": "Apple demonstrates the kind of extraordinary capital generation that separates the truly great businesses from the merely good ones—producing twice the free cash flow of four tech giants combined while maintaining nearly 50% gross margins and 28% net margins. The business earns exceptional returns on equity averaging 124%, compounds book value at 40% annually, and shows accelerating revenue growth to 15%. At 37.5 times earnings for a franchise of this quality with pricing power in its ecosystem, the valuation is full but not unreasonable for a company minting $9.36 per share in annual free cash flow with a durable moat.",
+    "components": {},
+    "metadata": {
+      "signal": "bullish",
+      "confidence": 78.0,
+      "model": "claude-sonnet-4-5-20250929",
+      "prompt_key": "c48e80da69a3fe1533fb1b28",
+      "snapshot_hash": "3088130383462b874a4eb052",
+      "cached": false,
+      "abstained": false
+    }
+  },
+  "raw_response": "```json\n{\n  \"signal\": \"bullish\",\n  \"confidence\": 78,\n  \"reasoning\": \"Apple demonstrates the kind of extraordinary capital generation that separates the truly great businesses from the merely good ones—producing twice the free cash flow of four tech giants combined while maintaining nearly 50% gross margins and 28% net margins. The business earns exceptional returns on equity averaging 124%, compounds book value at 40% annually, and shows accelerating revenue growth to 15%. At 37.5 times earnings for a franchise of this quality with pricing power in its ecosystem, the valuation is full but not unreasonable for a company minting $9.36 per share in annual free cash flow with a durable moat.\"\n}\n```",
+  "verdict": "valid_signal",
+  "complete_calls": 1,
+  "usage_metadata": {
+    "input_tokens": 1333,
+    "output_tokens": 167,
+    "total_tokens": 1500,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    }
+  },
+  "llm_seconds": 4.902184876999854,
+  "runtime_seconds": 4.903309638999872,
+  "cached": false,
+  "estimated_llm_cost_usd": 0.006504
+}

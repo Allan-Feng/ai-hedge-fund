@@ -1,0 +1,41 @@
+{
+  "trial": "r1_001_B",
+  "group": "B",
+  "arm": "daily_news",
+  "as_of": "2026-11-03",
+  "ticker": "AAPL",
+  "prompt_sha256": "510fc54dde43d6d59e2c52a7a750f1aed7fdbbee9347dc3f9bca1af3322d317c",
+  "signal": {
+    "model_name": "buffett",
+    "ticker": "AAPL",
+    "date": "2026-11-03",
+    "value": 0.78,
+    "reasoning": "This is a wonderful business showing exactly what you want to see: consistent high returns on equity averaging 124%, stable gross margins near 49%, and spectacular free cash flow generation—reportedly twice that of Microsoft, Meta, Alphabet and Amazon combined. The company compounds book value at 40% annually while maintaining reasonable leverage at 0.81 debt-to-equity. Revenue growth of 15% with 28% net margins demonstrates pricing power in a competitive industry. At 37.5 times earnings for a business of this quality and durability, the price isn't cheap but it's reasonable for a franchise with such a wide moat. I'd be comfortable owning this for ten years.",
+    "components": {},
+    "metadata": {
+      "signal": "bullish",
+      "confidence": 78.0,
+      "model": "claude-sonnet-4-5-20250929",
+      "prompt_key": "6b96cb3dd36d06c1f8667e97",
+      "snapshot_hash": "3088130383462b874a4eb052",
+      "cached": false,
+      "abstained": false
+    }
+  },
+  "raw_response": "```json\n{\n  \"signal\": \"bullish\",\n  \"confidence\": 78,\n  \"reasoning\": \"This is a wonderful business showing exactly what you want to see: consistent high returns on equity averaging 124%, stable gross margins near 49%, and spectacular free cash flow generation—reportedly twice that of Microsoft, Meta, Alphabet and Amazon combined. The company compounds book value at 40% annually while maintaining reasonable leverage at 0.81 debt-to-equity. Revenue growth of 15% with 28% net margins demonstrates pricing power in a competitive industry. At 37.5 times earnings for a business of this quality and durability, the price isn't cheap but it's reasonable for a franchise with such a wide moat. I'd be comfortable owning this for ten years.\"\n}\n```",
+  "verdict": "valid_signal",
+  "complete_calls": 1,
+  "usage_metadata": {
+    "input_tokens": 1342,
+    "output_tokens": 178,
+    "total_tokens": 1520,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    }
+  },
+  "llm_seconds": 5.640622830000211,
+  "runtime_seconds": 5.641735986000185,
+  "cached": false,
+  "estimated_llm_cost_usd": 0.006696
+}

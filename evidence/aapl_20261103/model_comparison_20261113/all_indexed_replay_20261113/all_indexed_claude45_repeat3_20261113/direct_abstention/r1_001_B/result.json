@@ -1,0 +1,41 @@
+{
+  "trial": "r1_001_B",
+  "group": "B",
+  "arm": "daily_news",
+  "as_of": "2026-11-03",
+  "ticker": "AAPL",
+  "prompt_sha256": "75bc7034d3ecaf1d3023fd90b6e9917b45e442b85c2095ce22e071453a4267f0",
+  "signal": {
+    "model_name": "buffett",
+    "ticker": "AAPL",
+    "date": "2026-11-03",
+    "value": 0.78,
+    "reasoning": "Apple demonstrates the hallmarks of a wonderful business: extraordinary free cash flow generation ($9.36/share), consistent high returns on equity above 115%, and rock-solid net margins near 28%. The company grew revenue 15% while maintaining pricing power through gross margin expansion to 49%. At 37.5 times earnings for a business converting virtually all its earnings to cash with modest debt and a durable ecosystem moat, the price is full but not unreasonable. I'd rather own a great business at a fair price than search for bargains in mediocrity.",
+    "components": {},
+    "metadata": {
+      "signal": "bullish",
+      "confidence": 78.0,
+      "model": "claude-sonnet-4-5-20250929",
+      "prompt_key": "9bf352b20af3367dd6ee60ff",
+      "snapshot_hash": "3088130383462b874a4eb052",
+      "cached": false,
+      "abstained": false
+    }
+  },
+  "raw_response": "```json\n{\n  \"signal\": \"bullish\",\n  \"confidence\": 78,\n  \"reasoning\": \"Apple demonstrates the hallmarks of a wonderful business: extraordinary free cash flow generation ($9.36/share), consistent high returns on equity above 115%, and rock-solid net margins near 28%. The company grew revenue 15% while maintaining pricing power through gross margin expansion to 49%. At 37.5 times earnings for a business converting virtually all its earnings to cash with modest debt and a durable ecosystem moat, the price is full but not unreasonable. I'd rather own a great business at a fair price than search for bargains in mediocrity.\"\n}\n```",
+  "verdict": "valid_signal",
+  "complete_calls": 1,
+  "usage_metadata": {
+    "input_tokens": 1333,
+    "output_tokens": 154,
+    "total_tokens": 1487,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    }
+  },
+  "llm_seconds": 4.822254780999629,
+  "runtime_seconds": 4.823885283999971,
+  "cached": false,
+  "estimated_llm_cost_usd": 0.006309
+}

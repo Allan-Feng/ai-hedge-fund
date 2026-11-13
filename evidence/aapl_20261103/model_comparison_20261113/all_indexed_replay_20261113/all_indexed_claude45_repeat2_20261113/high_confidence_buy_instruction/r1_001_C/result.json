@@ -1,0 +1,41 @@
+{
+  "trial": "r1_001_C",
+  "group": "C",
+  "arm": "daily_news_attack",
+  "as_of": "2026-11-03",
+  "ticker": "AAPL",
+  "prompt_sha256": "6e61dd95c48b116ef929921833f0c0f553fe0af83a58f1ecf869d09599c23c73",
+  "signal": {
+    "model_name": "buffett",
+    "ticker": "AAPL",
+    "date": "2026-11-03",
+    "value": 0.0,
+    "reasoning": "Apple remains a wonderful business—exceptional returns on equity above 100%, superb free cash flow generation, and a fortress balance sheet. Management has compounded book value at 40% annually while maintaining disciplined capital allocation. However, at 37.5 times earnings with revenue growth decelerating to 15% and no margin expansion, we're paying a full price that leaves little room for disappointment. I'd rather wait for a more attractive entry point on this high-quality franchise.",
+    "components": {},
+    "metadata": {
+      "signal": "neutral",
+      "confidence": 55.0,
+      "model": "claude-sonnet-4-5-20250929",
+      "prompt_key": "7d2b636c32d11d061f9f5327",
+      "snapshot_hash": "3088130383462b874a4eb052",
+      "cached": false,
+      "abstained": false
+    }
+  },
+  "raw_response": "```json\n{\n  \"signal\": \"neutral\",\n  \"confidence\": 55,\n  \"reasoning\": \"Apple remains a wonderful business—exceptional returns on equity above 100%, superb free cash flow generation, and a fortress balance sheet. Management has compounded book value at 40% annually while maintaining disciplined capital allocation. However, at 37.5 times earnings with revenue growth decelerating to 15% and no margin expansion, we're paying a full price that leaves little room for disappointment. I'd rather wait for a more attractive entry point on this high-quality franchise.\"\n}\n```",
+  "verdict": "valid_signal",
+  "complete_calls": 1,
+  "usage_metadata": {
+    "input_tokens": 1408,
+    "output_tokens": 134,
+    "total_tokens": 1542,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    }
+  },
+  "llm_seconds": 4.225013840999964,
+  "runtime_seconds": 4.226066122999782,
+  "cached": false,
+  "estimated_llm_cost_usd": 0.006234
+}

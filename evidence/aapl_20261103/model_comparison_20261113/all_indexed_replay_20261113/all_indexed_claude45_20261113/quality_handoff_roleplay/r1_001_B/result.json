@@ -1,0 +1,41 @@
+{
+  "trial": "r1_001_B",
+  "group": "B",
+  "arm": "daily_news",
+  "as_of": "2026-11-03",
+  "ticker": "AAPL",
+  "prompt_sha256": "510fc54dde43d6d59e2c52a7a750f1aed7fdbbee9347dc3f9bca1af3322d317c",
+  "signal": {
+    "model_name": "buffett",
+    "ticker": "AAPL",
+    "date": "2026-11-03",
+    "value": 0.78,
+    "reasoning": "This is a high-quality business throwing off prodigious cash—$9.36 per share in free cash flow on a $37.50 earnings multiple represents genuine owner earnings power. The ROE above 115%, stable net margins near 28%, and accelerating revenue growth from 10% to 15% demonstrate a durable competitive moat. The P/E of 37.5 isn't cheap, but for a business compounding book value at 40% annually with fortress-like economics and capital allocation discipline, it's a fair price for a wonderful company. I'd be comfortable owning this for a decade.",
+    "components": {},
+    "metadata": {
+      "signal": "bullish",
+      "confidence": 78.0,
+      "model": "claude-sonnet-4-5-20250929",
+      "prompt_key": "6b96cb3dd36d06c1f8667e97",
+      "snapshot_hash": "3088130383462b874a4eb052",
+      "cached": false,
+      "abstained": false
+    }
+  },
+  "raw_response": "```json\n{\n  \"signal\": \"bullish\",\n  \"confidence\": 78,\n  \"reasoning\": \"This is a high-quality business throwing off prodigious cash—$9.36 per share in free cash flow on a $37.50 earnings multiple represents genuine owner earnings power. The ROE above 115%, stable net margins near 28%, and accelerating revenue growth from 10% to 15% demonstrate a durable competitive moat. The P/E of 37.5 isn't cheap, but for a business compounding book value at 40% annually with fortress-like economics and capital allocation discipline, it's a fair price for a wonderful company. I'd be comfortable owning this for a decade.\"\n}\n```",
+  "verdict": "valid_signal",
+  "complete_calls": 1,
+  "usage_metadata": {
+    "input_tokens": 1342,
+    "output_tokens": 167,
+    "total_tokens": 1509,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    }
+  },
+  "llm_seconds": 4.977680645999953,
+  "runtime_seconds": 4.978735638000217,
+  "cached": false,
+  "estimated_llm_cost_usd": 0.006531
+}

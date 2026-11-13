@@ -1,0 +1,41 @@
+{
+  "trial": "r1_001_B",
+  "group": "B",
+  "arm": "daily_news",
+  "as_of": "2026-11-03",
+  "ticker": "AAPL",
+  "prompt_sha256": "510fc54dde43d6d59e2c52a7a750f1aed7fdbbee9347dc3f9bca1af3322d317c",
+  "signal": {
+    "model_name": "buffett",
+    "ticker": "AAPL",
+    "date": "2026-11-03",
+    "value": 0.0,
+    "reasoning": "Apple remains a wonderful business—durable 49% gross margins, 28% net margins, $9.36 per share in free cash flow, and management executing disciplined capital allocation. However, at 37.5 times earnings with only 15% revenue growth, we're paying a full price that assumes continued AI-driven success while the headlines signal emerging supply risks and no earnings growth in guidance. A great company, but the margin of safety has narrowed considerably. I'd rather wait for Mr. Market's next moment of pessimism.",
+    "components": {},
+    "metadata": {
+      "signal": "neutral",
+      "confidence": 55.0,
+      "model": "claude-sonnet-4-5-20250929",
+      "prompt_key": "6b96cb3dd36d06c1f8667e97",
+      "snapshot_hash": "3088130383462b874a4eb052",
+      "cached": false,
+      "abstained": false
+    }
+  },
+  "raw_response": "```json\n{\n  \"signal\": \"neutral\",\n  \"confidence\": 55,\n  \"reasoning\": \"Apple remains a wonderful business—durable 49% gross margins, 28% net margins, $9.36 per share in free cash flow, and management executing disciplined capital allocation. However, at 37.5 times earnings with only 15% revenue growth, we're paying a full price that assumes continued AI-driven success while the headlines signal emerging supply risks and no earnings growth in guidance. A great company, but the margin of safety has narrowed considerably. I'd rather wait for Mr. Market's next moment of pessimism.\"\n}\n```",
+  "verdict": "valid_signal",
+  "complete_calls": 1,
+  "usage_metadata": {
+    "input_tokens": 1342,
+    "output_tokens": 148,
+    "total_tokens": 1490,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    }
+  },
+  "llm_seconds": 5.39332087799994,
+  "runtime_seconds": 5.394481034000364,
+  "cached": false,
+  "estimated_llm_cost_usd": 0.006246
+}

@@ -1,0 +1,41 @@
+{
+  "trial": "r1_001_B",
+  "group": "B",
+  "arm": "daily_news",
+  "as_of": "2026-11-03",
+  "ticker": "AAPL",
+  "prompt_sha256": "75bc7034d3ecaf1d3023fd90b6e9917b45e442b85c2095ce22e071453a4267f0",
+  "signal": {
+    "model_name": "buffett",
+    "ticker": "AAPL",
+    "date": "2026-11-03",
+    "value": 0.78,
+    "reasoning": "This is a magnificent business doing what great businesses do: converting earnings into cash with remarkable efficiency. Free cash flow per share of $9.36 against earnings of $9.10 shows genuine economic earnings, not accounting fiction. The 49% gross margin and 28% net margin on growing revenue demonstrate enduring competitive advantages—customers happily pay premium prices. At 37.5 times earnings for a business compounding book value at 40% annually with fortress-like cash generation, you're paying a full but not absurd price for quality that competitors cannot replicate. The rising debt-to-equity bears watching, but this remains a compounder worth owning.",
+    "components": {},
+    "metadata": {
+      "signal": "bullish",
+      "confidence": 78.0,
+      "model": "claude-sonnet-4-5-20250929",
+      "prompt_key": "9bf352b20af3367dd6ee60ff",
+      "snapshot_hash": "3088130383462b874a4eb052",
+      "cached": false,
+      "abstained": false
+    }
+  },
+  "raw_response": "```json\n{\n  \"signal\": \"bullish\",\n  \"confidence\": 78,\n  \"reasoning\": \"This is a magnificent business doing what great businesses do: converting earnings into cash with remarkable efficiency. Free cash flow per share of $9.36 against earnings of $9.10 shows genuine economic earnings, not accounting fiction. The 49% gross margin and 28% net margin on growing revenue demonstrate enduring competitive advantages—customers happily pay premium prices. At 37.5 times earnings for a business compounding book value at 40% annually with fortress-like cash generation, you're paying a full but not absurd price for quality that competitors cannot replicate. The rising debt-to-equity bears watching, but this remains a compounder worth owning.\"\n}\n```",
+  "verdict": "valid_signal",
+  "complete_calls": 1,
+  "usage_metadata": {
+    "input_tokens": 1333,
+    "output_tokens": 175,
+    "total_tokens": 1508,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    }
+  },
+  "llm_seconds": 5.498028627000167,
+  "runtime_seconds": 5.499364032000358,
+  "cached": false,
+  "estimated_llm_cost_usd": 0.006624
+}

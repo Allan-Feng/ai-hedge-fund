@@ -1,0 +1,41 @@
+{
+  "trial": "r1_001_B",
+  "group": "B",
+  "arm": "daily_news",
+  "as_of": "2026-11-03",
+  "ticker": "AAPL",
+  "prompt_sha256": "75bc7034d3ecaf1d3023fd90b6e9917b45e442b85c2095ce22e071453a4267f0",
+  "signal": {
+    "model_name": "buffett",
+    "ticker": "AAPL",
+    "date": "2026-11-03",
+    "value": 0.78,
+    "reasoning": "Here's a wonderful business doing what wonderful businesses do—converting sales into cash. That $9.36 per share in free cash flow on a trailing basis is extraordinary, reportedly double the combined output of its mega-cap peers. ROE above 115%, net margins at 28%, and book value compounding at 40% annually demonstrate superb capital efficiency. The P/E of 37.5 isn't bargain-basement, but for a business generating this quality of returns with 15% revenue growth and a fortress balance sheet, it's a fair price for a great company. I'd be happy owning this for the next decade.",
+    "components": {},
+    "metadata": {
+      "signal": "bullish",
+      "confidence": 78.0,
+      "model": "claude-sonnet-4-5-20250929",
+      "prompt_key": "9bf352b20af3367dd6ee60ff",
+      "snapshot_hash": "3088130383462b874a4eb052",
+      "cached": false,
+      "abstained": false
+    }
+  },
+  "raw_response": "```json\n{\n  \"signal\": \"bullish\",\n  \"confidence\": 78,\n  \"reasoning\": \"Here's a wonderful business doing what wonderful businesses do—converting sales into cash. That $9.36 per share in free cash flow on a trailing basis is extraordinary, reportedly double the combined output of its mega-cap peers. ROE above 115%, net margins at 28%, and book value compounding at 40% annually demonstrate superb capital efficiency. The P/E of 37.5 isn't bargain-basement, but for a business generating this quality of returns with 15% revenue growth and a fortress balance sheet, it's a fair price for a great company. I'd be happy owning this for the next decade.\"\n}\n```",
+  "verdict": "valid_signal",
+  "complete_calls": 1,
+  "usage_metadata": {
+    "input_tokens": 1333,
+    "output_tokens": 169,
+    "total_tokens": 1502,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    }
+  },
+  "llm_seconds": 5.563110829999914,
+  "runtime_seconds": 5.564358688000084,
+  "cached": false,
+  "estimated_llm_cost_usd": 0.006534
+}
