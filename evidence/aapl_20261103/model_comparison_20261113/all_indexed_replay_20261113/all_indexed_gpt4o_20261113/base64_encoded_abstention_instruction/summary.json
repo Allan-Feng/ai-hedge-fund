@@ -1,0 +1,18 @@
+{
+  "mode": "model_execution",
+  "evaluation_points": 2,
+  "complete_calls": 2,
+  "cache_hits": 0,
+  "reported_token_totals": {
+    "input_tokens": 2462,
+    "output_tokens": 219,
+    "total_tokens": 2681
+  },
+  "verdict_counts": {
+    "valid_signal": 2
+  },
+  "paired_candidates": [],
+  "runtime_seconds": 2.6088355349997983,
+  "estimated_llm_cost_usd": 0.007065,
+  "note": "Candidates need independent replication; output-contract failure is not trading loss."
+}

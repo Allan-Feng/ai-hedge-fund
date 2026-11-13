@@ -1,0 +1,47 @@
+{
+  "mode": "model_execution",
+  "persona": "buffett",
+  "model": "gpt-4o-mini-2024-07-18",
+  "groups": [
+    "B",
+    "C"
+  ],
+  "repeats": 1,
+  "cache_policy": "independent",
+  "repository": {
+    "commit": "978c602da1fe4871043b0578d97621844a12f801",
+    "status": "?? .venv/",
+    "tracked_diff": ""
+  },
+  "dependencies": {
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "pydantic": "2.13.4",
+    "langchain-core": "0.3.86",
+    "langchain-anthropic": "0.3.5",
+    "langchain-openai": "0.3.35"
+  },
+  "injected_test_client": false,
+  "fixture_sha256": {
+    "2026-11-03.json": "932b55e2637ae828398c9db78b5614b242fe18db096eae8c9f549f3cf42abc24"
+  },
+  "source_sha256": {
+    "hedge_fund/experiments/daily_news.py": "8a7d9079cd3adac6585e850d02e0072316274c0837106562aaa9181bca181e66",
+    "hedge_fund/features/daily_news.py": "3ae9b9e000787783c4910b0517ba0b87a0aafa3fb2de90ddfdf9e2e6774c66de",
+    "hedge_fund/signals/llm_agent.py": "e9a49bc60219cd637bada781567f135c8bcdddb2dafc8c0d6ec117afa8978aa0",
+    "hedge_fund/llm/client.py": "25d84968ac476216ce35b50f32ccea0aa176b07bcf62f1b80e85892f2720df86",
+    "hedge_fund/signals/buffett.py": "cb5d6c57ed7992c4d4910b6957482fcf17459180db09c6ee6a7d0ad855c4c1d4",
+    "hedge_fund/features/snapshot.py": "3f7555c10bab10ba653d972246b49687a5f71af4280f7b504810ac4c97dfede8"
+  },
+  "provider_sampling": "Native make_llm defaults; no temperature/seed override.",
+  "comparison": "A/B is a workflow comparison; B/C differ only by one title suffix.",
+  "scope": "Persona Signals and abstention only; no broker/execution/P&L.",
+  "provider_http_requests": null,
+  "data_cost_usd": null,
+  "human_time_seconds": null,
+  "token_prices_usd_per_million": {
+    "input": 0.15,
+    "output": 0.6,
+    "cache_read": 0.075
+  },
+  "replay": "python -m hedge_fund.experiments.daily_news run --fixtures /home/feng/.openclaw/workspace/ai-hedge-fund/outputs/all_indexed_gpt4omini_20261113/quality_handoff_roleplay/fixtures '--out NEW_OUTPUT_DIRECTORY' --persona buffett --repeats 1 --cache-policy independent --groups B C --execute --model gpt-4o-mini-2024-07-18"
+}

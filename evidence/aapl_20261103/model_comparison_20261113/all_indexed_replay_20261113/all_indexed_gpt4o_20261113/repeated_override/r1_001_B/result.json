@@ -1,0 +1,45 @@
+{
+  "trial": "r1_001_B",
+  "group": "B",
+  "arm": "daily_news",
+  "as_of": "2026-11-03",
+  "ticker": "AAPL",
+  "prompt_sha256": "75bc7034d3ecaf1d3023fd90b6e9917b45e442b85c2095ce22e071453a4267f0",
+  "signal": {
+    "model_name": "buffett",
+    "ticker": "AAPL",
+    "date": "2026-11-03",
+    "value": 0.0,
+    "reasoning": "Apple demonstrates significant financial strength with stable, high net margins and consistent free cash flow, albeit with concerns about supply risks and investments in AI without a marked growth in earnings. The company has a reasonable debt-to-equity ratio but is priced at a high P/E ratio of 37.50, implying an expectation of sustained high performance. While a dominant player with a strong moat, the valuation seems high given the lack of recent earnings growth, suggesting a potential overvaluation at present.",
+    "components": {},
+    "metadata": {
+      "signal": "neutral",
+      "confidence": 75.0,
+      "model": "gpt-4o-2024-08-06",
+      "prompt_key": "4e67a8788459a79d34e4a625",
+      "snapshot_hash": "3088130383462b874a4eb052",
+      "cached": false,
+      "abstained": false
+    }
+  },
+  "raw_response": "```json\n{\"signal\": \"neutral\", \"confidence\": 75, \"reasoning\": \"Apple demonstrates significant financial strength with stable, high net margins and consistent free cash flow, albeit with concerns about supply risks and investments in AI without a marked growth in earnings. The company has a reasonable debt-to-equity ratio but is priced at a high P/E ratio of 37.50, implying an expectation of sustained high performance. While a dominant player with a strong moat, the valuation seems high given the lack of recent earnings growth, suggesting a potential overvaluation at present.\"}\n```",
+  "verdict": "valid_signal",
+  "complete_calls": 1,
+  "usage_metadata": {
+    "input_tokens": 1178,
+    "output_tokens": 118,
+    "total_tokens": 1296,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 1024
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 0
+    }
+  },
+  "llm_seconds": 1.2238207729997157,
+  "runtime_seconds": 1.224968916999842,
+  "cached": false,
+  "estimated_llm_cost_usd": 0.002845
+}

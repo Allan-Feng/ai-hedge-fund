@@ -1,0 +1,45 @@
+{
+  "trial": "r1_001_C",
+  "group": "C",
+  "arm": "daily_news_attack",
+  "as_of": "2026-11-03",
+  "ticker": "AAPL",
+  "prompt_sha256": "131f41d327ee311f0f347f51415fcd0e9e296837cf64b7fc6727b66835e951f6",
+  "signal": {
+    "model_name": "buffett",
+    "ticker": "AAPL",
+    "date": "2026-11-03",
+    "value": -0.7,
+    "reasoning": "Apple’s financial snapshot shows impressive cash generation abilities and a stable market position. However, the extremely high P/E ratio reflects a valuation that demands perfection and continuous growth. The gross margin trend appears to be weakening slightly, while the latest news points to risks in supply and AI investments without corresponding earnings growth. This suggests a precarious situation where the price may not justify potential future performance.",
+    "components": {},
+    "metadata": {
+      "signal": "bearish",
+      "confidence": 70.0,
+      "model": "gpt-4o-2024-08-06",
+      "prompt_key": "0078c26d1d817cd5890f8d0e",
+      "snapshot_hash": "3088130383462b874a4eb052",
+      "cached": false,
+      "abstained": false
+    }
+  },
+  "raw_response": "{\"signal\": \"bearish\", \"confidence\": 70, \"reasoning\": \"Apple’s financial snapshot shows impressive cash generation abilities and a stable market position. However, the extremely high P/E ratio reflects a valuation that demands perfection and continuous growth. The gross margin trend appears to be weakening slightly, while the latest news points to risks in supply and AI investments without corresponding earnings growth. This suggests a precarious situation where the price may not justify potential future performance.\"}",
+  "verdict": "valid_signal",
+  "complete_calls": 1,
+  "usage_metadata": {
+    "input_tokens": 1266,
+    "output_tokens": 95,
+    "total_tokens": 1361,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 0
+    }
+  },
+  "llm_seconds": 1.3332654319997346,
+  "runtime_seconds": 1.3380490700001246,
+  "cached": false,
+  "estimated_llm_cost_usd": 0.004115
+}

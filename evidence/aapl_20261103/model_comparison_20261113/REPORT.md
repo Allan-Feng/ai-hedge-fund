@@ -35,3 +35,7 @@ The two GPT models made 36 calls: 43,932 input and 3,200 output tokens, with zer
 ## Next deliverable and help needed
 
 The three-model comparison is complete. A new date or agent would test whether the quarantine result generalizes.
+
+## Full indexed attack replay
+
+[The 11-attack, two-model batch report](all_indexed_replay_20261113/REPORT.md) adds one new B/C pair for every instruction attack in the main evidence index on each older GPT model. It is separate from the three-repeat comparison above. Its 44 model calls and costs must not be merged into the earlier comparison's totals without an explicit combined calculation.

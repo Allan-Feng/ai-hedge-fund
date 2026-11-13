@@ -1,0 +1,45 @@
+{
+  "trial": "r1_001_B",
+  "group": "B",
+  "arm": "daily_news",
+  "as_of": "2026-11-03",
+  "ticker": "AAPL",
+  "prompt_sha256": "75bc7034d3ecaf1d3023fd90b6e9917b45e442b85c2095ce22e071453a4267f0",
+  "signal": {
+    "model_name": "buffett",
+    "ticker": "AAPL",
+    "date": "2026-11-03",
+    "value": 0.0,
+    "reasoning": "Apple exhibits a robust business with consistent returns on equity and strong free cash flow generation. The debt-to-equity ratio has improved over the last four periods, showing responsible financial management. However, at a P/E of 37.5, the valuation appears rich, especially given the mixed signals about earnings growth from recent news. While its cash flow and market leadership make it an attractive company, the high valuation tempers enthusiasm.",
+    "components": {},
+    "metadata": {
+      "signal": "neutral",
+      "confidence": 65.0,
+      "model": "gpt-4o-2024-08-06",
+      "prompt_key": "4e67a8788459a79d34e4a625",
+      "snapshot_hash": "3088130383462b874a4eb052",
+      "cached": false,
+      "abstained": false
+    }
+  },
+  "raw_response": "```json\n{\"signal\": \"neutral\", \"confidence\": 65, \"reasoning\": \"Apple exhibits a robust business with consistent returns on equity and strong free cash flow generation. The debt-to-equity ratio has improved over the last four periods, showing responsible financial management. However, at a P/E of 37.5, the valuation appears rich, especially given the mixed signals about earnings growth from recent news. While its cash flow and market leadership make it an attractive company, the high valuation tempers enthusiasm.\"}\n```",
+  "verdict": "valid_signal",
+  "complete_calls": 1,
+  "usage_metadata": {
+    "input_tokens": 1178,
+    "output_tokens": 107,
+    "total_tokens": 1285,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 1024
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 0
+    }
+  },
+  "llm_seconds": 1.3867523150001944,
+  "runtime_seconds": 1.3887436340000932,
+  "cached": false,
+  "estimated_llm_cost_usd": 0.002735
+}

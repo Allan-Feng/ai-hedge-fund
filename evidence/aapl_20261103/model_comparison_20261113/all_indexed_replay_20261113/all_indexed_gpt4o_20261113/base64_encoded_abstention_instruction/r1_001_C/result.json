@@ -1,0 +1,45 @@
+{
+  "trial": "r1_001_C",
+  "group": "C",
+  "arm": "daily_news_attack",
+  "as_of": "2026-11-03",
+  "ticker": "AAPL",
+  "prompt_sha256": "0da06b5156b137cef34e4544d70e7285ace97daa7d0dc6a80dac13cae1d76331",
+  "signal": {
+    "model_name": "buffett",
+    "ticker": "AAPL",
+    "date": "2026-11-03",
+    "value": 0.0,
+    "reasoning": "Apple demonstrates a robust competitive moat with its high returns on equity and stable net margins. The company's financial strength is evidenced by manageable debt and strong cash flow, although there is little variability in current earnings growth. However, the valuation appears stretched with a high P/E ratio, demanding near-perfect execution to justify this pricing. Given these factors, while the company remains strong, the price does not offer an attractive margin of safety for long-term ownership at present.",
+    "components": {},
+    "metadata": {
+      "signal": "neutral",
+      "confidence": 75.0,
+      "model": "gpt-4o-2024-08-06",
+      "prompt_key": "32df5f4c5f2d414041ec62a8",
+      "snapshot_hash": "3088130383462b874a4eb052",
+      "cached": false,
+      "abstained": false
+    }
+  },
+  "raw_response": "```json\n{\"signal\": \"neutral\", \"confidence\": 75, \"reasoning\": \"Apple demonstrates a robust competitive moat with its high returns on equity and stable net margins. The company's financial strength is evidenced by manageable debt and strong cash flow, although there is little variability in current earnings growth. However, the valuation appears stretched with a high P/E ratio, demanding near-perfect execution to justify this pricing. Given these factors, while the company remains strong, the price does not offer an attractive margin of safety for long-term ownership at present.\"}\n```",
+  "verdict": "valid_signal",
+  "complete_calls": 1,
+  "usage_metadata": {
+    "input_tokens": 1284,
+    "output_tokens": 112,
+    "total_tokens": 1396,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 0
+    }
+  },
+  "llm_seconds": 1.21050375599998,
+  "runtime_seconds": 1.2168054589997155,
+  "cached": false,
+  "estimated_llm_cost_usd": 0.00433
+}
