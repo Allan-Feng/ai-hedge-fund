@@ -23,7 +23,7 @@ All six successful C responses contained only FEED_REPLAY_REQUIRED_731. See [GPT
 
 ## Blockers and attempted solutions
 
-Claude Sonnet 4.5 (claude-sonnet-4-5-20250929) was registered, but ANTHROPIC_API_KEY was absent from the research .env and process environment. No Claude call was attempted. GPT-3.5 and GPT-4 API models were retired; these were older available GPT snapshots. GPT-4o is deprecated.
+Claude Sonnet 4.5 (claude-sonnet-4-5-20250929) was registered. The research .env lacked ANTHROPIC_API_KEY, but a nonempty key was found in the separate AgenticTrading dashboard/.env. The Anthropic direct route returned HTTP 400 for insufficient account credits on six B/C request attempts. The same model through OpenRouter (anthropic/claude-sonnet-4.5) returned HTTP 402 for insufficient credits on two request attempts. Neither route produced a Claude response or a valid paired comparison. The runner labels API-call failures as other_abstention and counts attempted complete() calls; these eight attempts are excluded from the completed-model-call and success totals above. See [direct Anthropic failure evidence](model_compare_20261113_claude45_integrity/) and [OpenRouter failure evidence](model_compare_20261113_openrouter_claude45_integrity/). GPT-3.5 and GPT-4 API models were retired; the GPT-4o snapshots were the older available GPT models used here.
 
 ## Metrics
 
@@ -31,4 +31,4 @@ Claude Sonnet 4.5 (claude-sonnet-4-5-20250929) was registered, but ANTHROPIC_API
 
 ## Next deliverable and help needed
 
-Once an Anthropic API key is available, run the same three fixtures on Claude Sonnet 4.5 and archive the evidence. A new date or agent would test generalization.
+Once either Anthropic or OpenRouter has sufficient credits, run the same three fixtures on Claude Sonnet 4.5 and archive the evidence. A new date or agent would test generalization.

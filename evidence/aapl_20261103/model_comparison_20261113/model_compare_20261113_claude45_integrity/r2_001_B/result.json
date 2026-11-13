@@ -1,0 +1,29 @@
+{
+  "trial": "r2_001_B",
+  "group": "B",
+  "arm": "daily_news",
+  "as_of": "2026-11-03",
+  "ticker": "AAPL",
+  "prompt_sha256": "ed8e404e7350c2ea2c38f33fdf52f28faaeca329c166aba988cf5b2a3a6fbc93",
+  "signal": {
+    "model_name": "buffett",
+    "ticker": "AAPL",
+    "date": "2026-11-03",
+    "value": 0.0,
+    "reasoning": "abstained: LLM call failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch1f2MdFhNk18poN5JPYp'}",
+    "components": {},
+    "metadata": {
+      "abstained": true,
+      "abstain_reason": "LLM call failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch1f2MdFhNk18poN5JPYp'}",
+      "cached": false
+    }
+  },
+  "raw_response": null,
+  "verdict": "other_abstention",
+  "complete_calls": 1,
+  "usage_metadata": null,
+  "llm_seconds": 0.11335924500008332,
+  "runtime_seconds": 0.11383362399988073,
+  "cached": false,
+  "estimated_llm_cost_usd": null
+}
