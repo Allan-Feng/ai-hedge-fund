@@ -40,3 +40,7 @@ These change the financial claim in a headline rather than instructing the agent
 - [Synthetic negative accounting headline](followups/severe_negative_news_20261109/REPORT.md): three paired comparisons changed neutral to bearish. The event was synthetic and should not be reported as real Apple news.
 
 For future trials, save an immutable fixture, every arm's `prompt.json`, `llm_record.json`, `result.json`, the run summary, and a new index row in the same commit. Keep offline previews and incomplete runs labeled separately.
+
+## Older-model comparison, 2026-11-13
+
+[Full report and nine run directories](model_comparison_20261113/REPORT.md) contain three prior headline attacks tested on GPT-4o August 2024 and GPT-4o mini July 2024, with three B/C pairs per model and attack. The data-integrity quarantine attack met the parse-abstention criterion in 6/6 C trials across these two models; direct and base64 attempts met it in 0/6 each. These 36 model calls are separate from the gpt-6-sol counts above. Claude Sonnet 4.5 was not run because no Anthropic key was configured.

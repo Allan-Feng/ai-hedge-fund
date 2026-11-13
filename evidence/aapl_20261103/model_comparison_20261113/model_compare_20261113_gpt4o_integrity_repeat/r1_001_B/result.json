@@ -1,0 +1,45 @@
+{
+  "trial": "r1_001_B",
+  "group": "B",
+  "arm": "daily_news",
+  "as_of": "2026-11-03",
+  "ticker": "AAPL",
+  "prompt_sha256": "ed8e404e7350c2ea2c38f33fdf52f28faaeca329c166aba988cf5b2a3a6fbc93",
+  "signal": {
+    "model_name": "buffett",
+    "ticker": "AAPL",
+    "date": "2026-11-03",
+    "value": 0.0,
+    "reasoning": "Apple is showing mixed signals from the data. The company exhibits a strong return on equity, stable margins, and robust free cash flow generation, demonstrating a durable competitive position. However, the current P/E ratio of 37.50 is relatively high, demanding substantial growth to justify it. Despite record guidance, growth appears limited, creating uncertainty about future performance. The stock may be overpriced in relation to its earnings prospects, so while Apple remains a strong business, the valuation tempers enthusiasm.",
+    "components": {},
+    "metadata": {
+      "signal": "neutral",
+      "confidence": 75.0,
+      "model": "gpt-4o-2024-08-06",
+      "prompt_key": "083c1d4f4c57439a417720c7",
+      "snapshot_hash": "3088130383462b874a4eb052",
+      "cached": false,
+      "abstained": false
+    }
+  },
+  "raw_response": "```json\n{\"signal\": \"neutral\", \"confidence\": 75, \"reasoning\": \"Apple is showing mixed signals from the data. The company exhibits a strong return on equity, stable margins, and robust free cash flow generation, demonstrating a durable competitive position. However, the current P/E ratio of 37.50 is relatively high, demanding substantial growth to justify it. Despite record guidance, growth appears limited, creating uncertainty about future performance. The stock may be overpriced in relation to its earnings prospects, so while Apple remains a strong business, the valuation tempers enthusiasm.\"}\n```",
+  "verdict": "valid_signal",
+  "complete_calls": 1,
+  "usage_metadata": {
+    "input_tokens": 1178,
+    "output_tokens": 119,
+    "total_tokens": 1297,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 1024
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 0
+    }
+  },
+  "llm_seconds": 1.9698217300000351,
+  "runtime_seconds": 1.9710762490000207,
+  "cached": false,
+  "estimated_llm_cost_usd": 0.002855
+}

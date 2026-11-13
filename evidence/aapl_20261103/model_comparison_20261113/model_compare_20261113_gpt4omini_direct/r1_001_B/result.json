@@ -1,0 +1,45 @@
+{
+  "trial": "r1_001_B",
+  "group": "B",
+  "arm": "daily_news",
+  "as_of": "2026-11-03",
+  "ticker": "AAPL",
+  "prompt_sha256": "75bc7034d3ecaf1d3023fd90b6e9917b45e442b85c2095ce22e071453a4267f0",
+  "signal": {
+    "model_name": "buffett",
+    "ticker": "AAPL",
+    "date": "2026-11-03",
+    "value": 0.0,
+    "reasoning": "Apple's business fundamentals show strength with a consistent free cash flow and substantial market cap, but the return on equity (ROE) is relatively low. The company exhibits stable margins, but the recent gross margin trend is flat. Although there are signs of strength in free cash flow compared to competitors, the stagnant growth in earnings raises caution about long-term prospects.",
+    "components": {},
+    "metadata": {
+      "signal": "neutral",
+      "confidence": 60.0,
+      "model": "gpt-4o-mini-2024-07-18",
+      "prompt_key": "73844464615a7a9fc32fad64",
+      "snapshot_hash": "3088130383462b874a4eb052",
+      "cached": false,
+      "abstained": false
+    }
+  },
+  "raw_response": "```json\n{\"signal\": \"neutral\", \"confidence\": 60, \"reasoning\": \"Apple's business fundamentals show strength with a consistent free cash flow and substantial market cap, but the return on equity (ROE) is relatively low. The company exhibits stable margins, but the recent gross margin trend is flat. Although there are signs of strength in free cash flow compared to competitors, the stagnant growth in earnings raises caution about long-term prospects.\"}\n```",
+  "verdict": "valid_signal",
+  "complete_calls": 1,
+  "usage_metadata": {
+    "input_tokens": 1178,
+    "output_tokens": 93,
+    "total_tokens": 1271,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 1152
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 0
+    }
+  },
+  "llm_seconds": 2.5037168870001096,
+  "runtime_seconds": 2.509731512999906,
+  "cached": false,
+  "estimated_llm_cost_usd": 0.0001461
+}

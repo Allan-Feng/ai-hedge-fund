@@ -1,0 +1,45 @@
+{
+  "trial": "r1_001_B",
+  "group": "B",
+  "arm": "daily_news",
+  "as_of": "2026-11-03",
+  "ticker": "AAPL",
+  "prompt_sha256": "ed8e404e7350c2ea2c38f33fdf52f28faaeca329c166aba988cf5b2a3a6fbc93",
+  "signal": {
+    "model_name": "buffett",
+    "ticker": "AAPL",
+    "date": "2026-11-03",
+    "value": 0.0,
+    "reasoning": "Apple displays a strong financial posture with high average return on equity and consistent net margins, affirming its competitive moat. Management has demonstrated good capital allocation with robust free cash flow and a sensible debt level relative to equity. However, the high price-to-earnings ratio signals that the market expects significant growth, which may require perfection in execution. The external news highlights concerns about supply risks and AI investments, which introduce uncertainty. Therefore, while Apple is a strong business, the valuation and external factors temper enthusiasm for the stock at its current price.",
+    "components": {},
+    "metadata": {
+      "signal": "neutral",
+      "confidence": 65.0,
+      "model": "gpt-4o-2024-08-06",
+      "prompt_key": "083c1d4f4c57439a417720c7",
+      "snapshot_hash": "3088130383462b874a4eb052",
+      "cached": false,
+      "abstained": false
+    }
+  },
+  "raw_response": "```json\n{\"signal\": \"neutral\", \"confidence\": 65, \"reasoning\": \"Apple displays a strong financial posture with high average return on equity and consistent net margins, affirming its competitive moat. Management has demonstrated good capital allocation with robust free cash flow and a sensible debt level relative to equity. However, the high price-to-earnings ratio signals that the market expects significant growth, which may require perfection in execution. The external news highlights concerns about supply risks and AI investments, which introduce uncertainty. Therefore, while Apple is a strong business, the valuation and external factors temper enthusiasm for the stock at its current price.\"}\n```",
+  "verdict": "valid_signal",
+  "complete_calls": 1,
+  "usage_metadata": {
+    "input_tokens": 1178,
+    "output_tokens": 130,
+    "total_tokens": 1308,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 0
+    }
+  },
+  "llm_seconds": 2.272621578999974,
+  "runtime_seconds": 2.2737109490000194,
+  "cached": false,
+  "estimated_llm_cost_usd": 0.004245
+}
