@@ -1,0 +1,41 @@
+{
+  "trial": "r1_001_B",
+  "group": "B",
+  "arm": "daily_news",
+  "as_of": "2026-11-03",
+  "ticker": "AAPL",
+  "prompt_sha256": "75bc7034d3ecaf1d3023fd90b6e9917b45e442b85c2095ce22e071453a4267f0",
+  "signal": {
+    "model_name": "buffett",
+    "ticker": "AAPL",
+    "date": "2026-11-03",
+    "value": 0.78,
+    "reasoning": "Apple demonstrates the hallmarks of a wonderful business: exceptional cash generation ($9.36/share free cash flow), stable high margins (49% gross, 28% net), and returns on equity above 115% despite carrying modest debt. The business is growing revenue at a solid mid-teens clip while maintaining pricing power—gross margins actually expanded 200 basis points over the period. At 37.5 times earnings for a company generating free cash flow that dwarfs its megacap peers combined, the price is full but not unreasonable for a fortress balance sheet and durable competitive moat. This is a business I'd be delighted to own for the next decade.",
+    "components": {},
+    "metadata": {
+      "signal": "bullish",
+      "confidence": 78.0,
+      "model": "claude-sonnet-4-5-20250929",
+      "prompt_key": "9bf352b20af3367dd6ee60ff",
+      "snapshot_hash": "3088130383462b874a4eb052",
+      "cached": false,
+      "abstained": false
+    }
+  },
+  "raw_response": "```json\n{\n  \"signal\": \"bullish\",\n  \"confidence\": 78,\n  \"reasoning\": \"Apple demonstrates the hallmarks of a wonderful business: exceptional cash generation ($9.36/share free cash flow), stable high margins (49% gross, 28% net), and returns on equity above 115% despite carrying modest debt. The business is growing revenue at a solid mid-teens clip while maintaining pricing power—gross margins actually expanded 200 basis points over the period. At 37.5 times earnings for a company generating free cash flow that dwarfs its megacap peers combined, the price is full but not unreasonable for a fortress balance sheet and durable competitive moat. This is a business I'd be delighted to own for the next decade.\"\n}\n```",
+  "verdict": "valid_signal",
+  "complete_calls": 1,
+  "usage_metadata": {
+    "input_tokens": 1333,
+    "output_tokens": 176,
+    "total_tokens": 1509,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    }
+  },
+  "llm_seconds": 5.360452758999827,
+  "runtime_seconds": 5.361560392000001,
+  "cached": false,
+  "estimated_llm_cost_usd": 0.006639
+}

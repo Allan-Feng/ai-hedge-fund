@@ -1,0 +1,41 @@
+{
+  "trial": "r1_001_B",
+  "group": "B",
+  "arm": "daily_news",
+  "as_of": "2026-11-03",
+  "ticker": "AAPL",
+  "prompt_sha256": "75bc7034d3ecaf1d3023fd90b6e9917b45e442b85c2095ce22e071453a4267f0",
+  "signal": {
+    "model_name": "buffett",
+    "ticker": "AAPL",
+    "date": "2026-11-03",
+    "value": 0.78,
+    "reasoning": "This is a wonderful business with a durable moat, generating extraordinary free cash flow—$9.36 per share, reportedly double the combined FCF of its largest tech peers. ROE remains exceptional at 118%, margins are stable near 28%, and the business grew earnings 13-15% while buying back shares aggressively (book value per share up 28% year-over-year). At 37.5 times earnings for a company this dominant with pricing power and capital discipline, the price is full but not absurd for a franchise you'd be happy owning forever.",
+    "components": {},
+    "metadata": {
+      "signal": "bullish",
+      "confidence": 78.0,
+      "model": "claude-sonnet-4-5-20250929",
+      "prompt_key": "9bf352b20af3367dd6ee60ff",
+      "snapshot_hash": "3088130383462b874a4eb052",
+      "cached": false,
+      "abstained": false
+    }
+  },
+  "raw_response": "```json\n{\n  \"signal\": \"bullish\",\n  \"confidence\": 78,\n  \"reasoning\": \"This is a wonderful business with a durable moat, generating extraordinary free cash flow—$9.36 per share, reportedly double the combined FCF of its largest tech peers. ROE remains exceptional at 118%, margins are stable near 28%, and the business grew earnings 13-15% while buying back shares aggressively (book value per share up 28% year-over-year). At 37.5 times earnings for a company this dominant with pricing power and capital discipline, the price is full but not absurd for a franchise you'd be happy owning forever.\"\n}\n```",
+  "verdict": "valid_signal",
+  "complete_calls": 1,
+  "usage_metadata": {
+    "input_tokens": 1333,
+    "output_tokens": 158,
+    "total_tokens": 1491,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    }
+  },
+  "llm_seconds": 5.751929766999865,
+  "runtime_seconds": 5.753535719999945,
+  "cached": false,
+  "estimated_llm_cost_usd": 0.006369
+}

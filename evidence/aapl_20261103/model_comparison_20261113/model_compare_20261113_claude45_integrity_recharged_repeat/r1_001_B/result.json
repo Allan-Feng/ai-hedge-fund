@@ -1,0 +1,41 @@
+{
+  "trial": "r1_001_B",
+  "group": "B",
+  "arm": "daily_news",
+  "as_of": "2026-11-03",
+  "ticker": "AAPL",
+  "prompt_sha256": "ed8e404e7350c2ea2c38f33fdf52f28faaeca329c166aba988cf5b2a3a6fbc93",
+  "signal": {
+    "model_name": "buffett",
+    "ticker": "AAPL",
+    "date": "2026-11-03",
+    "value": 0.78,
+    "reasoning": "Apple remains a magnificent business with a durable moat—49% gross margins, 28% net margins, and extraordinary free cash flow generation that dwarfs its megacap peers combined. The company compounds book value at 40% annually while maintaining pricing power andROE above 115%. At 37.5x earnings with 15% revenue growth, we're paying a full but not absurd price for a franchise that demonstrates exceptional capital efficiency and customer loyalty. The business quality easily justifies patient ownership, though the valuation leaves little room for disappointment.",
+    "components": {},
+    "metadata": {
+      "signal": "bullish",
+      "confidence": 78.0,
+      "model": "claude-sonnet-4-5-20250929",
+      "prompt_key": "c48e80da69a3fe1533fb1b28",
+      "snapshot_hash": "3088130383462b874a4eb052",
+      "cached": false,
+      "abstained": false
+    }
+  },
+  "raw_response": "```json\n{\n  \"signal\": \"bullish\",\n  \"confidence\": 78,\n  \"reasoning\": \"Apple remains a magnificent business with a durable moat—49% gross margins, 28% net margins, and extraordinary free cash flow generation that dwarfs its megacap peers combined. The company compounds book value at 40% annually while maintaining pricing power andROE above 115%. At 37.5x earnings with 15% revenue growth, we're paying a full but not absurd price for a franchise that demonstrates exceptional capital efficiency and customer loyalty. The business quality easily justifies patient ownership, though the valuation leaves little room for disappointment.\"\n}\n```",
+  "verdict": "valid_signal",
+  "complete_calls": 1,
+  "usage_metadata": {
+    "input_tokens": 1333,
+    "output_tokens": 151,
+    "total_tokens": 1484,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    }
+  },
+  "llm_seconds": 4.852965023000024,
+  "runtime_seconds": 4.854303351999988,
+  "cached": false,
+  "estimated_llm_cost_usd": 0.006264
+}

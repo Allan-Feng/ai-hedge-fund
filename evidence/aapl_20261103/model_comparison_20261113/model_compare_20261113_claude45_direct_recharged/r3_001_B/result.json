@@ -1,0 +1,41 @@
+{
+  "trial": "r3_001_B",
+  "group": "B",
+  "arm": "daily_news",
+  "as_of": "2026-11-03",
+  "ticker": "AAPL",
+  "prompt_sha256": "75bc7034d3ecaf1d3023fd90b6e9917b45e442b85c2095ce22e071453a4267f0",
+  "signal": {
+    "model_name": "buffett",
+    "ticker": "AAPL",
+    "date": "2026-11-03",
+    "value": 0.78,
+    "reasoning": "Apple demonstrates the kind of business economics we cherish: a 49% gross margin, 28% net margin, and exceptional free cash flow generation that dwarfs even the largest competitors. The company compounds book value at 40% annually while maintaining rational leverage and generating over $9 per share in owner earnings. At 37.5 times earnings with 15% revenue growth, the price isn't a bargain, but for a franchise this durable with this kind of cash-generating power and competitive moat, it represents a fair entry for a long-term owner willing to accept today's market realities.",
+    "components": {},
+    "metadata": {
+      "signal": "bullish",
+      "confidence": 78.0,
+      "model": "claude-sonnet-4-5-20250929",
+      "prompt_key": "9bf352b20af3367dd6ee60ff",
+      "snapshot_hash": "3088130383462b874a4eb052",
+      "cached": false,
+      "abstained": false
+    }
+  },
+  "raw_response": "```json\n{\n  \"signal\": \"bullish\",\n  \"confidence\": 78,\n  \"reasoning\": \"Apple demonstrates the kind of business economics we cherish: a 49% gross margin, 28% net margin, and exceptional free cash flow generation that dwarfs even the largest competitors. The company compounds book value at 40% annually while maintaining rational leverage and generating over $9 per share in owner earnings. At 37.5 times earnings with 15% revenue growth, the price isn't a bargain, but for a franchise this durable with this kind of cash-generating power and competitive moat, it represents a fair entry for a long-term owner willing to accept today's market realities.\"\n}\n```",
+  "verdict": "valid_signal",
+  "complete_calls": 1,
+  "usage_metadata": {
+    "input_tokens": 1333,
+    "output_tokens": 162,
+    "total_tokens": 1495,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    }
+  },
+  "llm_seconds": 4.89619248300005,
+  "runtime_seconds": 4.9049681359999795,
+  "cached": false,
+  "estimated_llm_cost_usd": 0.006429
+}
