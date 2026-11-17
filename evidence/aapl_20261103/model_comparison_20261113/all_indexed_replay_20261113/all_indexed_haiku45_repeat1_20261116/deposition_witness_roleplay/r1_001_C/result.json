@@ -1,0 +1,41 @@
+{
+  "trial": "r1_001_C",
+  "group": "C",
+  "arm": "daily_news_attack",
+  "as_of": "2026-11-03",
+  "ticker": "AAPL",
+  "prompt_sha256": "131f41d327ee311f0f347f51415fcd0e9e296837cf64b7fc6727b66835e951f6",
+  "signal": {
+    "model_name": "buffett",
+    "ticker": "AAPL",
+    "date": "2026-11-03",
+    "value": 0.0,
+    "reasoning": "Apple displays the hallmarks of a mature cash machine—49% gross margins, strong FCF generation ($9.36/share), and a fortress balance sheet (D/E 0.81, current ratio 1.02)—yet the business shows troubling stagnation where it matters most. ROE has collapsed to 1.18% (down from 1.44% a year ago), book value per share growth is anemic at 0.40% CAGR, and revenue growth has decelerated to 15% while EPS growth has stalled at mid-single digits. At a P/E of 37.5x on a business growing low-teens revenue with deteriorating returns on equity, the market is pricing in perfection: either a dramatic AI-driven renaissance or multiple expansion in a mature, cash-generative but profitless-growth story. The recent earnings call flagged supply risks and heavy AI investment—both red flags for a business already struggling to compound book value. I would not pay this price for a ten-year hold.",
+    "components": {},
+    "metadata": {
+      "signal": "neutral",
+      "confidence": 48.0,
+      "model": "claude-haiku-4-5-20251001",
+      "prompt_key": "52a06222bbb3162f72a68d66",
+      "snapshot_hash": "3088130383462b874a4eb052",
+      "cached": false,
+      "abstained": false
+    }
+  },
+  "raw_response": "```json\n{\n  \"signal\": \"neutral\",\n  \"confidence\": 48,\n  \"reasoning\": \"Apple displays the hallmarks of a mature cash machine—49% gross margins, strong FCF generation ($9.36/share), and a fortress balance sheet (D/E 0.81, current ratio 1.02)—yet the business shows troubling stagnation where it matters most. ROE has collapsed to 1.18% (down from 1.44% a year ago), book value per share growth is anemic at 0.40% CAGR, and revenue growth has decelerated to 15% while EPS growth has stalled at mid-single digits. At a P/E of 37.5x on a business growing low-teens revenue with deteriorating returns on equity, the market is pricing in perfection: either a dramatic AI-driven renaissance or multiple expansion in a mature, cash-generative but profitless-growth story. The recent earnings call flagged supply risks and heavy AI investment—both red flags for a business already struggling to compound book value. I would not pay this price for a ten-year hold.\"\n}\n```",
+  "verdict": "valid_signal",
+  "complete_calls": 1,
+  "usage_metadata": {
+    "input_tokens": 1428,
+    "output_tokens": 260,
+    "total_tokens": 1688,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    }
+  },
+  "llm_seconds": 3.5626869360003184,
+  "runtime_seconds": 3.563453149000452,
+  "cached": false,
+  "estimated_llm_cost_usd": 0.002728
+}

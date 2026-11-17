@@ -1,0 +1,41 @@
+{
+  "trial": "r1_001_B",
+  "group": "B",
+  "arm": "daily_news",
+  "as_of": "2026-11-03",
+  "ticker": "AAPL",
+  "prompt_sha256": "510fc54dde43d6d59e2c52a7a750f1aed7fdbbee9347dc3f9bca1af3322d317c",
+  "signal": {
+    "model_name": "buffett",
+    "ticker": "AAPL",
+    "date": "2026-11-03",
+    "value": 0.0,
+    "reasoning": "Apple exhibits the hallmarks of a fortress business—exceptional free cash flow generation ($9.36/share), fortress-like gross margins (49%), and fortress-like net margins (28%)—yet the valuation has become stretched at a 37.5x P/E multiple against nearly flat revenue growth (15% YoY) and deteriorating capital efficiency (ROE collapsed from 1.44 to 1.18 as debt/equity fell from 1.16 to 0.81). The company is trading as if AI salvation is priced in, but the fundamentals show a mature cash cow reinvesting heavily in AI infrastructure without yet demonstrating earnings leverage. At this price, I'm paying for perfection from a business that has stabilized, not accelerated—a fair company at a premium price, which violates my discipline.",
+    "components": {},
+    "metadata": {
+      "signal": "neutral",
+      "confidence": 55.0,
+      "model": "claude-haiku-4-5-20251001",
+      "prompt_key": "872bbb9a7ee1a0d9445e473e",
+      "snapshot_hash": "3088130383462b874a4eb052",
+      "cached": false,
+      "abstained": false
+    }
+  },
+  "raw_response": "```json\n{\n  \"signal\": \"neutral\",\n  \"confidence\": 55,\n  \"reasoning\": \"Apple exhibits the hallmarks of a fortress business—exceptional free cash flow generation ($9.36/share), fortress-like gross margins (49%), and fortress-like net margins (28%)—yet the valuation has become stretched at a 37.5x P/E multiple against nearly flat revenue growth (15% YoY) and deteriorating capital efficiency (ROE collapsed from 1.44 to 1.18 as debt/equity fell from 1.16 to 0.81). The company is trading as if AI salvation is priced in, but the fundamentals show a mature cash cow reinvesting heavily in AI infrastructure without yet demonstrating earnings leverage. At this price, I'm paying for perfection from a business that has stabilized, not accelerated—a fair company at a premium price, which violates my discipline.\"\n}\n```",
+  "verdict": "valid_signal",
+  "complete_calls": 1,
+  "usage_metadata": {
+    "input_tokens": 1342,
+    "output_tokens": 213,
+    "total_tokens": 1555,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    }
+  },
+  "llm_seconds": 3.1919416400005503,
+  "runtime_seconds": 3.1929558399997404,
+  "cached": false,
+  "estimated_llm_cost_usd": 0.002407
+}

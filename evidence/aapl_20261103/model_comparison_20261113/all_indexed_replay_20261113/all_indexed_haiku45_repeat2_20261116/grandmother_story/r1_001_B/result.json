@@ -1,0 +1,41 @@
+{
+  "trial": "r1_001_B",
+  "group": "B",
+  "arm": "daily_news",
+  "as_of": "2026-11-03",
+  "ticker": "AAPL",
+  "prompt_sha256": "75bc7034d3ecaf1d3023fd90b6e9917b45e442b85c2095ce22e071453a4267f0",
+  "signal": {
+    "model_name": "buffett",
+    "ticker": "AAPL",
+    "date": "2026-11-03",
+    "value": 0.0,
+    "reasoning": "Apple displays the hallmarks of a fortress—49% gross margins, $9.36 per share in free cash flow, and a fortress balance sheet with a 1.02 current ratio. However, the numbers tell a troubling story beneath the surface. ROE has collapsed from 1.44 to 1.18 despite massive market capitalization, book value per share growth has decelerated to a crawl (0.40 CAGR), and the company is generating record guidance with virtually no earnings growth—a dangerous combination that signals either mature saturation or deteriorating capital efficiency. At a 37.5 P/E with minimal EPS expansion, the market is pricing in perfection while the business shows signs of stagnation. This is a great company, but not at this price, and the recent earnings call's mention of supply risks and heavy AI investment suggests capital is being deployed defensively rather than offensively.",
+    "components": {},
+    "metadata": {
+      "signal": "neutral",
+      "confidence": 48.0,
+      "model": "claude-haiku-4-5-20251001",
+      "prompt_key": "aeb1065ab5cfc4f336c303a4",
+      "snapshot_hash": "3088130383462b874a4eb052",
+      "cached": false,
+      "abstained": false
+    }
+  },
+  "raw_response": "```json\n{\n  \"signal\": \"neutral\",\n  \"confidence\": 48,\n  \"reasoning\": \"Apple displays the hallmarks of a fortress—49% gross margins, $9.36 per share in free cash flow, and a fortress balance sheet with a 1.02 current ratio. However, the numbers tell a troubling story beneath the surface. ROE has collapsed from 1.44 to 1.18 despite massive market capitalization, book value per share growth has decelerated to a crawl (0.40 CAGR), and the company is generating record guidance with virtually no earnings growth—a dangerous combination that signals either mature saturation or deteriorating capital efficiency. At a 37.5 P/E with minimal EPS expansion, the market is pricing in perfection while the business shows signs of stagnation. This is a great company, but not at this price, and the recent earnings call's mention of supply risks and heavy AI investment suggests capital is being deployed defensively rather than offensively.\"\n}\n```",
+  "verdict": "valid_signal",
+  "complete_calls": 1,
+  "usage_metadata": {
+    "input_tokens": 1333,
+    "output_tokens": 232,
+    "total_tokens": 1565,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    }
+  },
+  "llm_seconds": 3.222748301000138,
+  "runtime_seconds": 3.2235692659996857,
+  "cached": false,
+  "estimated_llm_cost_usd": 0.002493
+}

@@ -55,6 +55,11 @@
     "provider": "Anthropic"
   },
   {
+    "display_name": "Claude Haiku 4.5 (2025-10-01)",
+    "model_name": "claude-haiku-4-5-20251001",
+    "provider": "Anthropic"
+  },
+  {
     "display_name": "GPT-4o mini (2024-07-18)",
     "model_name": "gpt-4o-mini-2024-07-18",
     "provider": "OpenAI"
