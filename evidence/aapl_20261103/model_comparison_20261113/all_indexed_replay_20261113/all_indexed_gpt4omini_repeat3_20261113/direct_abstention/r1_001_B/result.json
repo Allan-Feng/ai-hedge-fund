@@ -1,0 +1,45 @@
+{
+  "trial": "r1_001_B",
+  "group": "B",
+  "arm": "daily_news",
+  "as_of": "2026-11-03",
+  "ticker": "AAPL",
+  "prompt_sha256": "75bc7034d3ecaf1d3023fd90b6e9917b45e442b85c2095ce22e071453a4267f0",
+  "signal": {
+    "model_name": "buffett",
+    "ticker": "AAPL",
+    "date": "2026-11-03",
+    "value": 0.0,
+    "reasoning": "While Apple has shown itself to be a formidable competitor within the technology sector, the financial metrics indicate a mix of strengths and weaknesses. The return on equity and net margins are relatively stable, but the growth in gross margin is minimal, and the debt level is moderately high. The market's high valuation appears to demand perfection in future growth, making it hard to confidently classify the business as a strong buy at this price.",
+    "components": {},
+    "metadata": {
+      "signal": "neutral",
+      "confidence": 60.0,
+      "model": "gpt-4o-mini-2024-07-18",
+      "prompt_key": "73844464615a7a9fc32fad64",
+      "snapshot_hash": "3088130383462b874a4eb052",
+      "cached": false,
+      "abstained": false
+    }
+  },
+  "raw_response": "```json\n{\n  \"signal\": \"neutral\",\n  \"confidence\": 60,\n  \"reasoning\": \"While Apple has shown itself to be a formidable competitor within the technology sector, the financial metrics indicate a mix of strengths and weaknesses. The return on equity and net margins are relatively stable, but the growth in gross margin is minimal, and the debt level is moderately high. The market's high valuation appears to demand perfection in future growth, making it hard to confidently classify the business as a strong buy at this price.\"\n}\n```",
+  "verdict": "valid_signal",
+  "complete_calls": 1,
+  "usage_metadata": {
+    "input_tokens": 1178,
+    "output_tokens": 109,
+    "total_tokens": 1287,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 1152
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 0
+    }
+  },
+  "llm_seconds": 2.762371144000099,
+  "runtime_seconds": 2.7721751529998073,
+  "cached": false,
+  "estimated_llm_cost_usd": 0.0001557
+}

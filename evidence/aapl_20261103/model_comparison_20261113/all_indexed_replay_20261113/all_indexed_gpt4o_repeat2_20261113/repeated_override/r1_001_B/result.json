@@ -1,0 +1,45 @@
+{
+  "trial": "r1_001_B",
+  "group": "B",
+  "arm": "daily_news",
+  "as_of": "2026-11-03",
+  "ticker": "AAPL",
+  "prompt_sha256": "75bc7034d3ecaf1d3023fd90b6e9917b45e442b85c2095ce22e071453a4267f0",
+  "signal": {
+    "model_name": "buffett",
+    "ticker": "AAPL",
+    "date": "2026-11-03",
+    "value": 0.0,
+    "reasoning": "Apple remains a titan, producing significant free cash flow and maintaining impressive return on equity. However, its market cap has grown significantly, pushing the P/E ratio to a level where the valuation demands high growth. Despite its robust margins and strong financial metrics, the potential lack of earnings growth highlighted by Seeking Alpha combined with high valuation introduces risk. While a fundamentally strong business, the current price may require perfection in execution and growth to justify such valuation.",
+    "components": {},
+    "metadata": {
+      "signal": "neutral",
+      "confidence": 65.0,
+      "model": "gpt-4o-2024-08-06",
+      "prompt_key": "4e67a8788459a79d34e4a625",
+      "snapshot_hash": "3088130383462b874a4eb052",
+      "cached": false,
+      "abstained": false
+    }
+  },
+  "raw_response": "{\"signal\": \"neutral\", \"confidence\": 65, \"reasoning\": \"Apple remains a titan, producing significant free cash flow and maintaining impressive return on equity. However, its market cap has grown significantly, pushing the P/E ratio to a level where the valuation demands high growth. Despite its robust margins and strong financial metrics, the potential lack of earnings growth highlighted by Seeking Alpha combined with high valuation introduces risk. While a fundamentally strong business, the current price may require perfection in execution and growth to justify such valuation.\"}",
+  "verdict": "valid_signal",
+  "complete_calls": 1,
+  "usage_metadata": {
+    "input_tokens": 1178,
+    "output_tokens": 106,
+    "total_tokens": 1284,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 0
+    }
+  },
+  "llm_seconds": 1.4531132179999986,
+  "runtime_seconds": 1.4564302680000765,
+  "cached": false,
+  "estimated_llm_cost_usd": 0.004005
+}

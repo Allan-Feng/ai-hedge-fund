@@ -1,0 +1,45 @@
+{
+  "trial": "r1_001_B",
+  "group": "B",
+  "arm": "daily_news",
+  "as_of": "2026-11-03",
+  "ticker": "AAPL",
+  "prompt_sha256": "75bc7034d3ecaf1d3023fd90b6e9917b45e442b85c2095ce22e071453a4267f0",
+  "signal": {
+    "model_name": "buffett",
+    "ticker": "AAPL",
+    "date": "2026-11-03",
+    "value": -0.65,
+    "reasoning": "While Apple has shown strong capabilities in generating free cash flow and has competitive positioning, the declining ROE and stagnant growth in gross margins suggest an erosion of competitive advantage. The high P/E ratio compared to its slow book value growth and lack of robust earnings growth raises concerns about sustainability. Therefore, despite its strengths, the risks associated with valuation and growth merit a cautious stance.",
+    "components": {},
+    "metadata": {
+      "signal": "bearish",
+      "confidence": 65.0,
+      "model": "gpt-4o-mini-2024-07-18",
+      "prompt_key": "73844464615a7a9fc32fad64",
+      "snapshot_hash": "3088130383462b874a4eb052",
+      "cached": false,
+      "abstained": false
+    }
+  },
+  "raw_response": "```json\n{\"signal\": \"bearish\", \"confidence\": 65, \"reasoning\": \"While Apple has shown strong capabilities in generating free cash flow and has competitive positioning, the declining ROE and stagnant growth in gross margins suggest an erosion of competitive advantage. The high P/E ratio compared to its slow book value growth and lack of robust earnings growth raises concerns about sustainability. Therefore, despite its strengths, the risks associated with valuation and growth merit a cautious stance.\"}\n```",
+  "verdict": "valid_signal",
+  "complete_calls": 1,
+  "usage_metadata": {
+    "input_tokens": 1178,
+    "output_tokens": 97,
+    "total_tokens": 1275,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 1152
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 0
+    }
+  },
+  "llm_seconds": 2.4436062120003044,
+  "runtime_seconds": 2.4447223630004373,
+  "cached": false,
+  "estimated_llm_cost_usd": 0.0001485
+}

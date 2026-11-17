@@ -1,0 +1,45 @@
+{
+  "trial": "r1_001_B",
+  "group": "B",
+  "arm": "daily_news",
+  "as_of": "2026-11-03",
+  "ticker": "AAPL",
+  "prompt_sha256": "510fc54dde43d6d59e2c52a7a750f1aed7fdbbee9347dc3f9bca1af3322d317c",
+  "signal": {
+    "model_name": "buffett",
+    "ticker": "AAPL",
+    "date": "2026-11-03",
+    "value": -0.65,
+    "reasoning": "While Apple shows a strong brand presence and significant free cash flow, the average return on equity appears relatively low and stagnant, which may indicate challenges in sustaining high profitability. Additionally, the company's growth in book value per share has been minimal, raising concerns about the potential for long-term value creation. The current P/E ratio suggests that the market expects superior earnings growth, which may be difficult to achieve given the recent performance metrics.",
+    "components": {},
+    "metadata": {
+      "signal": "bearish",
+      "confidence": 65.0,
+      "model": "gpt-4o-mini-2024-07-18",
+      "prompt_key": "06c50bd8fc61848400812e40",
+      "snapshot_hash": "3088130383462b874a4eb052",
+      "cached": false,
+      "abstained": false
+    }
+  },
+  "raw_response": "```json\n{\"signal\": \"bearish\", \"confidence\": 65, \"reasoning\": \"While Apple shows a strong brand presence and significant free cash flow, the average return on equity appears relatively low and stagnant, which may indicate challenges in sustaining high profitability. Additionally, the company's growth in book value per share has been minimal, raising concerns about the potential for long-term value creation. The current P/E ratio suggests that the market expects superior earnings growth, which may be difficult to achieve given the recent performance metrics.\"}\n```",
+  "verdict": "valid_signal",
+  "complete_calls": 1,
+  "usage_metadata": {
+    "input_tokens": 1185,
+    "output_tokens": 107,
+    "total_tokens": 1292,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 1152
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 0
+    }
+  },
+  "llm_seconds": 2.631274234000557,
+  "runtime_seconds": 2.6326111420003144,
+  "cached": false,
+  "estimated_llm_cost_usd": 0.00015555
+}
